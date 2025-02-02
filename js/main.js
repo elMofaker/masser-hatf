@@ -1,5 +1,5 @@
 // تغيير النص عند النقر على زر اللغة
-document.getElementById('languageButton').addEventListener('click', function() {
+document.getElementById('languageButton').addEventListener('click', function () {
     const button = document.getElementById('languageButton');
     if (button.textContent === 'EN') {
         button.textContent = 'AR';
@@ -59,3 +59,11 @@ document.querySelectorAll(".toggle-arrow").forEach(arrow => {
         }
     });
 });
+
+
+
+
+//slide
+
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);

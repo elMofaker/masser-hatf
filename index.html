@@ -78,7 +78,9 @@
             <div class="services-container">
                 <div class="col-1 service-btn">
                     <div>
-                        <div><h2>الخدمات</h2></div>
+                        <div>
+                            <h2>الخدمات</h2>
+                        </div>
                         <div class="controls">
                             <button onclick="prevSlide()">&lt;</button>
                             <button onclick="nextSlide()">&gt;</button>
@@ -118,7 +120,7 @@
         <h2 class="tit-head">المنتجات</h2>
 
         <section id="Products" class="Products">
-            <div class="card">
+            <div class="card-prod">
                 <img src="images/Product-img1.png" alt="صورة">
                 <div class="card-content">
                     <span class="toggle-arrow">➜</span>
@@ -126,15 +128,17 @@
                     <p class="card-description">
                         مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في بيئات
                         محكومة بدرجات حرارة منخفضة.
-                        <span class="extra-text" style="display: none;"> تعتمد مسير على أحدث التقنيات لضمان الحفاظ على الجودة والسلامة
+                        <span class="extra-text" style="display: none;"> تعتمد مسير على أحدث التقنيات لضمان الحفاظ على
+                            الجودة والسلامة
                             للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد فعّالة تلبي
-                            احتياجات الصناعات التي تتطلب تخزينًا طويل الأمد تحت درجات حرارة ثابتة، مع توفير مستويات عالية من
+                            احتياجات الصناعات التي تتطلب تخزينًا طويل الأمد تحت درجات حرارة ثابتة، مع توفير مستويات
+                            عالية من
                             الأمان والنظافة.</span>
                     </p>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card-prod">
                 <img src="images/Product-img3.png" alt="صورة">
                 <div class="card-content">
                     <span class="toggle-arrow">➜</span>
@@ -149,37 +153,55 @@
 
 
         <!-- Excellence -->
-        <div class="tit-head-m"></div><h2 class="tit-head">اهم ما يميزنا</h2></div>
+        <div class="tit-head-m"></div>
+        <h2 class="tit-head">اهم ما يميزنا</h2>
+        </div>
 
         <section id="Excellence" class="Excellence">
-            <div class="image-section">
-                <div class="image large-image">
-                    <img src="images/Excellence-img1.png" alt="صورة 1">
-                    <div class="overlay">
-                        <h2>أكثر من 17 عاما من الخبرة</h2>
-                        <p>تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات <br /> المعدنية ومنتجات التبريد المنزلية.
-                        </p>
-                    </div>
-                </div>
-                <div class="image small-image-1">
-                    <img src="images/Excellence-img2.png" alt="صورة 2">
-                    <div class="overlay-s"></div>
-                </div>
-                <div class="image small-image-2">
-                    <img src="images/Excellence-img3.png" alt="صورة 2">
-                    <div class="overlay-s"></div>
+            <div class="wrapper">
+                <div class="container-slider">
+                    <input style="display: none;" type="radio" name="slide" id="c1" checked>
+                    <label for="c1" class="card">
+                        <div class="row">
+                            <div class="description">
+                                <h4>أكثر من 17 عاما من الخبرة</h4>
+                                <p>تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.
+                                </p>
+                            </div>
+                        </div>
+                    </label>
+                    <input style="display: none;" type="radio" name="slide" id="c2">
+                    <label for="c2" class="card">
+
+                    </label>
+                    <input style="display: none;" type="radio" name="slide" id="c3">
+                    <label for="c3" class="card">
+                    </label>
                 </div>
             </div>
         </section>
 
 
-
         <!-- Success -->
-        <div class="tit-head-m"><h2 class="tit-head">شركاء النجاح</h2></div>
+        <div class="tit-head-m">
+            <h2 class="tit-head">شركاء النجاح</h2>
+        </div>
 
         <section id="Partners-of-success" class="Partners-of-success">
-            <div>
-                <img src="images/Success-img.png" alt="صورة 1">
+            <div class="logos">
+                <div class="logos-slide">
+                    <img src="images/slider-logo.png" />
+                    <img src="images/slider-logo.png" />
+                    <img src="images/slider-logo.png" />
+                    <img src="images/slider-logo.png" />
+                    <img src="images/slider-logo.png" />
+                    <img src="images/slider-logo.png" />
+                    <img src="images/slider-logo.png" />
+                    <img src="images/slider-logo.png" />
+                    <img src="images/slider-logo.png" />
+                    <img src="images/slider-logo.png" />
+                    <img src="images/slider-logo.png" />
+                </div>
             </div>
         </section>
 

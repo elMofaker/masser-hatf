@@ -6,30 +6,29 @@ body {
     text-align: right;
 }
 
-.bg-page{
+.bg-page {
     background-color: #f0f0f0;
 }
 
-.tit-head{
+.tit-head {
     color: #262622;
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 20px;
     text-align: center;
 }
 
-.tit-head-m{
+.tit-head-m {
     margin-top: 100px;
 }
 
 /* home */
-.top-area{
+.top-area {
     background-color: #ffffff00;
     color: white;
-    padding-top: 16px ;
-    padding-bottom: 16px ;
-    padding-left: 24px ;
-    padding-right: 24px ;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
     text-align: center;
 }
 
@@ -38,16 +37,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent ;
+    background-color: transparent;
     backdrop-filter: blur(15px);
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 50px; 
+    border-radius: 50px;
 }
 
 /* تنسيق الشعار */
 .logo img {
-    height: 50px; /* يمكنك تعديل الارتفاع حسب الحاجة */
+    height: 50px;
+    /* يمكنك تعديل الارتفاع حسب الحاجة */
 }
 
 /* تنسيق قائمة الروابط */
@@ -91,14 +91,15 @@ body {
 }
 
 .welcome-hero {
-    border-bottom-right-radius:16px ;
-    border-bottom-left-radius:16px ;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
     position: relative;
-    background:url(../images/background.png)no-repeat;
+    background: url(../images/background.png)no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 1;
 }
+
 .welcome-hero:before {
     position: absolute;
     content: normal;
@@ -107,12 +108,15 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    border-bottom-right-radius:16px ;
-    border-bottom-left-radius:16px ;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
 
 
-.welcome-hero-txt{text-align: center;padding:100px 0 150px;}
+.welcome-hero-txt {
+    text-align: center;
+    padding: 100px 0 150px;
+}
 
 .welcome-hero-txt h2 {
     font-size: 42px;
@@ -121,6 +125,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 45px;
 }
+
 .welcome-hero-txt p {
     font-size: 24px;
     text-transform: initial;
@@ -129,6 +134,7 @@ body {
     max-width: 735px;
     margin: 0 auto;
 }
+
 .welcome-btn {
     display: inline-block;
     width: 280px;
@@ -137,13 +143,14 @@ body {
     color: #fff;
     border-radius: 3px;
     margin-top: 55px;
-    -webkit-transition: .3s linear; 
-    -moz-transition:.3s linear; 
-    -ms-transition:.3s linear; 
-    -o-transition:.3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
     transition: .3s linear;
 }
-.welcome-btn:hover{
+
+.welcome-btn:hover {
     background: #0102fa;
 }
 
@@ -226,7 +233,7 @@ body {
 
 /* تنسيق قسم الخدمات */
 
-.service{
+.service {
     flex: 1;
     padding: 20px;
     background: #f0f0f0;
@@ -234,7 +241,7 @@ body {
     width: 700px;
 }
 
-.service-img{
+.service-img {
     width: 100%;
     height: auto;
 }
@@ -267,11 +274,11 @@ body {
 
 .slide img {
     width: 972px;
-    height: 197px ;
+    height: 197px;
     display: block;
 }
 
-.hiden-img{
+.hiden-img {
     overflow: hidden;
 
 }
@@ -293,7 +300,7 @@ body {
     font-size: 18px;
 }
 
-.slide-Shadow{
+.slide-Shadow {
     width: 1359px;
     height: 328px;
     background-color: #828282ac;
@@ -323,17 +330,17 @@ body {
     transform: rotate(180deg);
 }
 
-.service-btn{
+.service-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #000000;
     border-radius: 3px;
     margin-left: 30px;
-    -webkit-transition: .3s linear; 
-    -moz-transition:.3s linear; 
-    -ms-transition:.3s linear; 
-    -o-transition:.3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
     transition: .3s linear;
 }
 
@@ -351,7 +358,7 @@ body {
     justify-content: center;
 }
 
-.card {
+.card-prod {
     background: white;
     width: 519px;
     border-radius: 12px;
@@ -367,7 +374,7 @@ body {
     transform: translateY(-5px);
 }
 
-.card img {
+.card-prod img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -424,88 +431,161 @@ body {
 
 /* Excellence */
 
-
-
-.Excellence {
-    margin-left: 120px;
-}
-
-.image-section {
+.wrapper {
+    margin-left: 130px;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    width: 1281px; 
-    height: 452px; 
-    justify-content: space-between; 
+    align-items: center;
+    justify-content: center;
 }
 
-.image {
+.container-slider {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    margin-right: 250px;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card>.row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card>.row>.icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; 
+    margin: 15px;
 }
 
-.large-image {
-    flex: 1 1 50%; 
-    margin-right: 1px;  
+.card>.row>.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     overflow: hidden;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
 }
 
-.small-image-1{
-    flex: 1;  
-    width: 25%;    
-    margin-left: 1px; 
-    overflow: hidden;
-}
-
-.small-image-2{
-    flex: 1;  
-    width: 25%;    
-    margin-left: 1px; 
-    overflow: hidden;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.image img {
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 20px;
-    border-radius: 10px; 
-    width: 100%; 
-}
-
-.overlay h2 {
-    font-size: 28px;
-    color: #ffffff;
-}
-
-.overlay p {
-    font-size: 20px; 
-    color: #ffffff;
+    margin-right: 60px;
+    margin-top: 170px;
+    font-size: 16px;
 }
 
 
+
+
+
+input:checked+label {
+    width: 600px;
+}
+
+input:checked+label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('../images/Excellence-img1.png');
+}
+
+.card[for="c2"] {
+    background-image: url('../images/Excellence-img2.png');
+}
+
+.card[for="c3"] {
+    background-image: url('../images/Excellence-img3.png');
+}
 
 
 /* success */
 
-.Partners-of-success{
-    margin-top: 80px;
-    margin-bottom: 100px;
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
+
 
 
 
@@ -521,7 +601,8 @@ body {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    background: #475c6e; /* الخلفية الزرقاء */
+    background: #475c6e;
+    /* الخلفية الزرقاء */
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -536,13 +617,15 @@ body {
 .form-container {
     flex: 1;
     text-align: center;
-    color: white; /* النص الأبيض داخل النموذج */
+    color: white;
+    /* النص الأبيض داخل النموذج */
     margin-bottom: 20px;
 }
 
 .form-container h2 {
     font-size: 22px;
-    color: white; /* تغيير اللون إلى الأبيض */
+    color: white;
+    /* تغيير اللون إلى الأبيض */
     margin-bottom: 15px;
 }
 
@@ -552,7 +635,8 @@ form {
     gap: 10px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -566,7 +650,8 @@ textarea {
 }
 
 button {
-    background: #ffffff; /* خلفية زر الإرسال باللون الأخضر */
+    background: #ffffff;
+    /* خلفية زر الإرسال باللون الأخضر */
     color: rgb(0, 0, 0);
     padding: 12px;
     border: none;
@@ -577,7 +662,8 @@ button {
 }
 
 button:hover {
-    background: #ffffff; /* تدرج أخضر داكن عند التمرير */
+    background: #ffffff;
+    /* تدرج أخضر داكن عند التمرير */
 }
 
 .image-container {
@@ -601,7 +687,8 @@ button:hover {
 
 /*footer*/
 .footer {
-    background-color: #ffffff; /* خلفية زرقاء */
+    background-color: #ffffff;
+    /* خلفية زرقاء */
     color: rgb(0, 0, 0);
     padding: 40px 20px;
     text-align: center;
@@ -613,7 +700,8 @@ button:hover {
 }
 
 .logo-container img {
-    width: 150px; /* حجم اللوجو */
+    width: 150px;
+    /* حجم اللوجو */
     margin-bottom: 20px;
 }
 
@@ -626,19 +714,21 @@ button:hover {
 }
 
 .social-icons img {
-    width: 40px; /* حجم الأيقونات */
+    width: 40px;
+    /* حجم الأيقونات */
     transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
-    transform: scale(1.1); /* تكبير الأيقونات عند التمرير */
+    transform: scale(1.1);
+    /* تكبير الأيقونات عند التمرير */
 }
 
 .footer-text {
     text-align: center;
     font-size: 16px;
     margin-bottom: 20px;
-    color:#262622;
+    color: #262622;
     margin-top: 20px;
 }
 
