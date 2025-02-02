@@ -1,0 +1,657 @@
+/* تطبيق تنسيق عام */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.bg-page{
+    background-color: #f0f0f0;
+}
+
+.tit-head{
+    color: #262622;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tit-head-m{
+    margin-top: 100px;
+}
+
+/* home */
+.top-area{
+    background-color: #ffffff00;
+    color: white;
+    padding-top: 16px ;
+    padding-bottom: 16px ;
+    padding-left: 24px ;
+    padding-right: 24px ;
+    text-align: center;
+}
+
+/* تنسيق الـ Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent ;
+    backdrop-filter: blur(15px);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50px; 
+}
+
+/* تنسيق الشعار */
+.logo img {
+    height: 50px; /* يمكنك تعديل الارتفاع حسب الحاجة */
+}
+
+/* تنسيق قائمة الروابط */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+/* تنسيق زر تغيير اللغة */
+.language-switcher button {
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.language-switcher button:hover {
+    background-color: #ffffff00;
+}
+
+.welcome-hero {
+    border-bottom-right-radius:16px ;
+    border-bottom-left-radius:16px ;
+    position: relative;
+    background:url(../images/background.png)no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+.welcome-hero:before {
+    position: absolute;
+    content: normal;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom-right-radius:16px ;
+    border-bottom-left-radius:16px ;
+}
+
+
+.welcome-hero-txt{text-align: center;padding:100px 0 150px;}
+
+.welcome-hero-txt h2 {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.welcome-hero-txt p {
+    font-size: 24px;
+    text-transform: initial;
+    color: #fff;
+    font-weight: 500;
+    max-width: 735px;
+    margin: 0 auto;
+}
+.welcome-btn {
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+    background: #4e4ffa;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 55px;
+    -webkit-transition: .3s linear; 
+    -moz-transition:.3s linear; 
+    -ms-transition:.3s linear; 
+    -o-transition:.3s linear;
+    transition: .3s linear;
+}
+.welcome-btn:hover{
+    background: #0102fa;
+}
+
+
+
+
+
+
+
+/* introduce */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #000;
+    text-align: right;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.about-image img {
+    width: 364px;
+    height: 343px;
+    border-radius: 30px;
+    border: 2px solid #ddd;
+}
+
+.decor {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: url('decor.png') no-repeat center center;
+    background-size: contain;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* تنسيق قسم الخدمات */
+
+.service{
+    flex: 1;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    width: 700px;
+}
+
+.service-img{
+    width: 100%;
+    height: auto;
+}
+
+.services-container {
+    display: flex;
+    padding: 50px 100px;
+}
+
+.slider {
+    position: relative;
+    width: 1085px;
+    overflow: hidden;
+    margin-top: 65.5px;
+    margin-left: 100px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 250px;
+    margin: 0 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide img {
+    width: 972px;
+    height: 197px ;
+    display: block;
+}
+
+.hiden-img{
+    overflow: hidden;
+
+}
+
+
+
+.slide .overlay-s {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.slide-Shadow{
+    width: 1359px;
+    height: 328px;
+    background-color: #828282ac;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-left: 350px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    opacity: 0.7;
+}
+
+.prev-btn {
+    transform: rotate(180deg);
+}
+
+.service-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    border-radius: 3px;
+    margin-left: 30px;
+    -webkit-transition: .3s linear; 
+    -moz-transition:.3s linear; 
+    -ms-transition:.3s linear; 
+    -o-transition:.3s linear;
+    transition: .3s linear;
+}
+
+
+
+
+
+
+/* Products */
+
+.Products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    width: 519px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: right;
+    position: relative;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #555;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+    max-height: 40px;
+}
+
+.card-description.expanded {
+    max-height: 200px;
+}
+
+.toggle-arrow {
+    display: block;
+    font-size: 18px;
+    color: #007bff;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #262622;
+}
+
+
+
+
+
+
+
+/* Excellence */
+
+
+
+.Excellence {
+    margin-left: 120px;
+}
+
+.image-section {
+    display: flex;
+    width: 1281px; 
+    height: 452px; 
+    justify-content: space-between; 
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.large-image {
+    flex: 1 1 50%; 
+    margin-right: 1px;  
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.small-image-1{
+    flex: 1;  
+    width: 25%;    
+    margin-left: 1px; 
+    overflow: hidden;
+}
+
+.small-image-2{
+    flex: 1;  
+    width: 25%;    
+    margin-left: 1px; 
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px; 
+    width: 100%; 
+}
+
+.overlay h2 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.overlay p {
+    font-size: 20px; 
+    color: #ffffff;
+}
+
+
+
+
+/* success */
+
+.Partners-of-success{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+/* contact */
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #475c6e; /* الخلفية الزرقاء */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1281px;
+    height: 601px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 100px;
+    direction: rtl;
+}
+
+.form-container {
+    flex: 1;
+    text-align: center;
+    color: white; /* النص الأبيض داخل النموذج */
+    margin-bottom: 20px;
+}
+
+.form-container h2 {
+    font-size: 22px;
+    color: white; /* تغيير اللون إلى الأبيض */
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    background: #ffffff; /* خلفية زر الإرسال باللون الأخضر */
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ffffff; /* تدرج أخضر داكن عند التمرير */
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container img {
+    width: 510px;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer {
+    background-color: #ffffff; /* خلفية زرقاء */
+    color: rgb(0, 0, 0);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container img {
+    width: 150px; /* حجم اللوجو */
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+}
+
+.social-icons img {
+    width: 40px; /* حجم الأيقونات */
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* تكبير الأيقونات عند التمرير */
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color:#262622;
+    margin-top: 20px;
+}
+
+.contact-info {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
