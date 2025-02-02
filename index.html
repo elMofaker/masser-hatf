@@ -22,18 +22,19 @@
 
                     <!-- قائمة الروابط -->
                     <ul class="nav-links">
-                        <li class="scroll"><a href="#contact">اتصل بنا</a></li>
-                        <li class="scroll"><a href="#partners">شركاء النجاح</a></li>
-                        <li class="scroll"><a href="#services">الخدمات</a></li>
-                        <li class="scroll"><a href="#products">المنتجات</a></li>
-                        <li class="scroll"><a href="#about">من نحن</a></li>
-                        <li class="scroll active"><a href="#home">الصفحة الرئيسية</a></li>
+                        <li class="scroll"><a href="#contact" >اتصل بنا</a></li>
+                        <li class="scroll"><a href="#partners" >شركاء النجاح</a></li>
+                        <li class="scroll"><a href="#services" >الخدمات</a></li>
+                        <li class="scroll"><a href="#products" >المنتجات</a></li>
+                        <li class="scroll"><a href="#about" >من نحن</a></li>
+                        <li class="scroll active"><a href="#home" >الصفحة الرئيسية</a></li>
                     </ul>
 
-                    <!-- زر تغيير اللغة على اليمين -->
+                    <!-- زر تغيير اللغة -->
                     <div class="language-switcher">
-                        <button id="languageButton">EN</button>
+                        <button id="languageButton" onclick="toggleLanguage()">EN</button>
                     </div>
+
                 </nav>
             </div>
 
@@ -77,7 +78,7 @@
         <section id="Services" class="service">
             <div class="services-container">
                 <div class="col-1 service-btn">
-                    <div>
+                    <div class="control-tit-btn">
                         <div>
                             <h2>الخدمات</h2>
                         </div>
@@ -124,7 +125,7 @@
                 <img src="images/Product-img1.png" alt="صورة">
                 <div class="card-content">
                     <span class="toggle-arrow">➜</span>
-                    <h3 class="card-title">غرف و مستودعات التبريد و التجميد</h3>
+                    <h3 class="card-title" data-lang="titlecard1">غرف و مستودعات التبريد و التجميد</h3>
                     <p class="card-description">
                         مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في بيئات
                         محكومة بدرجات حرارة منخفضة.

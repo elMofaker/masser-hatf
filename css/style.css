@@ -232,7 +232,6 @@ body {
 
 
 /* تنسيق قسم الخدمات */
-
 .service {
     flex: 1;
     padding: 20px;
@@ -248,15 +247,18 @@ body {
 
 .services-container {
     display: flex;
-    padding: 50px 100px;
+    padding: 100px 100px; /* قللت المسافة للحفاظ على المساحة */
+    justify-content: flex-start; /* لضبط العرض بشكل صحيح */
+    margin-left: 213px;
 }
 
 .slider {
     position: relative;
-    width: 1085px;
-    overflow: hidden;
+    width: 100%; /* جعلت عرض السلايد 100% ليتناسب مع الحاوية */
+    max-width: 1085px; /* وضع حد أقصى للعرض */
+    overflow: hidden; /* إخفاء الجزء الذي يخرج من السلايد */
     margin-top: 65.5px;
-    margin-left: 100px;
+    margin-left: 20px;
 }
 
 .slides {
@@ -280,10 +282,7 @@ body {
 
 .hiden-img {
     overflow: hidden;
-
 }
-
-
 
 .slide .overlay-s {
     position: absolute;
@@ -306,7 +305,7 @@ body {
     background-color: #828282ac;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    margin-left: 350px;
+    margin-left: 20px;
 }
 
 .controls {
@@ -314,6 +313,7 @@ body {
     align-items: center;
     gap: 15px;
 }
+
 
 .controls button {
     background: none;
@@ -344,6 +344,13 @@ body {
     transition: .3s linear;
 }
 
+
+.control-tit-btn{
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    margin-right: 300px;
+}
 
 
 
@@ -434,7 +441,7 @@ body {
 .wrapper {
     margin-left: 130px;
     width: 100%;
-    height: 100vh;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
