@@ -4,13 +4,18 @@
 <head>
     <title>Maseer</title>
     <meta charset="UTF-8" />
-	<link rel="shortcut icon" type="image/icon" href="images/nav logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/icon" href="images/nav logo.png" />
+
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/bootstrap.css">
 
-	<link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -215,26 +220,36 @@
 
 
         <!-- Contact -->
-        <section class="contact-form">
-            <div class="form-container">
-                <h2>تواصل معنا عبر واتساب</h2>
-                <form id="contactForm">
-                    <input type="text" name="name" placeholder="الاسم" required>
-                    <input type="tel" name="phone" style="text-align: right;" placeholder="هاتفك" required>
-                    <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-                    <textarea name="message" placeholder="  الرسالة..." required></textarea>
-                    <button type="submit">إرسال</button>
-                </form>
-            </div>
-            <div class="image-container">
-                <img src="images/Contact-img.png" alt="تواصل عبر واتساب">
+        <section class="contact-form py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- نموذج التواصل -->
+                    <div class="col-md-6">
+                        <div class="form-container text-center text-md-end">
+                            <h2 class="mb-4">تواصل معنا عبر واتساب</h2>
+                            <form id="contactForm">
+                                <input type="text" class="form-control mb-3" name="name" placeholder="الاسم" required>
+                                <input type="tel" class="form-control mb-3 text-end" name="phone" placeholder="هاتفك" required>
+                                <input type="email" class="form-control mb-3" name="email" placeholder="البريد الإلكتروني" required>
+                                <textarea class="form-control mb-3" name="message" rows="4" placeholder="الرسالة..." required></textarea>
+                                <button type="submit" class="btn btn-light w-100">إرسال</button>
+                            </form>
+                        </div>
+                    </div>
+        
+                    <!-- صورة التواصل -->
+                    <div class="col-md-6 text-center">
+                        <img src="images/Contact-img.png" class="img-fluid rounded mt-4 mt-md-0" alt="تواصل عبر واتساب">
+                    </div>
+                </div>
             </div>
         </section>
+
     </section>
 
 
     <!-- Footer -->
-    <footer class="footer container col-sm">
+    <footer class="footer">
         <div class="footer-content">
             <!-- لوجو الشركة -->
             <div class="logo-container">
@@ -307,6 +322,9 @@
     <script src="js/main.js"></script>
 
     <script src="js/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

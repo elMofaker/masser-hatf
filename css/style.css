@@ -1,3 +1,19 @@
+@media (max-width: 768px) {
+    .my-class {
+    font-size: 14px;
+    text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /* تطبيق تنسيق عام */
 body {
     font-family: Arial, sans-serif;
@@ -300,7 +316,7 @@ body {
 }
 
 .slide-Shadow {
-    width: 1050px;
+    width: 970px;
     height: 328px;
     background-color: #828282ac;
     border-top-left-radius: 30px;
