@@ -1,282 +1,269 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html class="no-js" lang="en">
 
 <head>
-    <title></title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+	<title>maseer</title>
+
+	<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="assets/css/linearicons.css">
+
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="assets/css/bootsnav.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
-    <section class="bg-page">
-        <!-- home -->
-        <section id="home" class="welcome-hero">
-            <div class="top-area">
-                <!-- Navbar -->
-                <nav class="navbar">
-                    <!-- شعار الشركة على اليسار -->
-                    <div class="logo">
-                        <img src="images/nav logo.png" alt="شعار الشركة">
-                    </div>
 
-                    <!-- قائمة الروابط -->
-                    <ul class="nav-links">
-                        <li class="scroll"><a href="#contact">اتصل بنا</a></li>
-                        <li class="scroll"><a href="#partners">شركاء النجاح</a></li>
-                        <li class="scroll"><a href="#services">الخدمات</a></li>
-                        <li class="scroll"><a href="#products">المنتجات</a></li>
-                        <li class="scroll"><a href="#about">من نحن</a></li>
-                        <li class="scroll active"><a href="#home">الصفحة الرئيسية</a></li>
-                    </ul>
+	<section id="home" class="welcome-hero">
 
-                    <!-- زر تغيير اللغة -->
-                    <div class="language-switcher">
-                        <button id="languageButton" onclick="toggleLanguage()">EN</button>
-                    </div>
+		<div class="top-area">
+			<div class="header-area">
+				<nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"
+					data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
 
-                </nav>
-            </div>
+					<div class="container">
 
-            <div class="container">
-                <div class="welcome-hero-txt">
-                    <h2>ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات <br /> كافة الصناعات</h2>
-                    <p>حلول تغليف قوية، تصاميم مبتكرة</p>
-                    <button class="welcome-btn">تواصل معنا</button>
-                </div>
-            </div>
-        </section>
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#navbar-menu">
+								<i class="fa fa-bars"></i>
+							</button>
+							<div class="logo">
+								<img src="assets/images/pic/nav logo.png" alt="شعار الشركة">
+							</div>
+						</div>
+						<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
+						<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+							<ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+								<li class="scroll"><a href="#contact">اتصل بنا</a></li>
+								<li class="scroll"><a href="#Partners-of-success">شركاء النجاح</a></li>
+								<li class="scroll"><a href="#Products">المنتجات</a></li>
+								<li class="scroll"><a href="#service">الخدمات</a></li>
+								<li class="scroll"><a href="#about">من نحن</a></li>
+								<li class="scroll active"><a href="#home">الصفحة الرئيسية</a></li>
+							</ul>
 
-        <!-- introduce -->
-        <section id="Who-we-are" class="about-section">
-            <div class=" col-3 about-image">
-                <img src="images/introduce-img.png" alt="تعرف علينا">
-            </div>
-            <div class="col-8 about-text">
-                <h2>نعرفك علينا</h2>
-                <p>
-                    تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية. من خلال سنوات من
-                    البحث والتطوير والتوسع ، أدخلنا خطوطًا متنوعة تشمل المزيد من الصناعات المعدنية بالإضافة إلى حلول
-                    التبريد
-                    التجاري الثابت والنقل. توسعت خدمات مسير لتخدم قطاعات أكبر من العملاء لتشمل خدمات ما بعد البيع في
-                    مبيعات
-                    قطع الغيار وصيانة أنظمة التبريد التجارية ومراكز تقديم الطعام والقهوة. يقع مصنع مسير الصناعي في
-                    المدينة
-                    الصناعية الأولى بمحافظة القصيم ، سلة غذاء المملكة من الخضار والتمور. نفخر بكوننا المصنع الوحيد من
-                    نوعه
-                    في المنطقة وجميع مناطق شمال المملكة ، مما يجعلنا مسؤولين عن تقديم الخدمة وتلبية احتياجات ومتطلبات
-                    عملائنا لتحقيق رؤية المملكة في تأمين الغذاء و سلاسل التوريد لجميع أنحاء المملكة. يقدم مصنع مسير
-                    الصناعي
-                    مجموعة متنوعة من المنتجات والخدمات والحلول المتكاملة التي تخدم مجموعة واسعة من العملاء في العديد من
-                    القطاعات المختلفة </p>
-            </div>
-        </section>
+						</div>
+
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="welcome-hero-txt">
+				<h2>ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات <br /> كافة الصناعات</h2>
+				<p>حلول تغليف قوية، تصاميم مبتكرة</p>
+				<button class="welcome-btn">تواصل معنا</button>
+			</div>
+		</div>
+	</section>
 
 
-        <!-- Services -->
-        <section id="Services" class="service">
-            <div class="services-container">
-                <div class="col-1 service-btn">
-                    <div class="control-tit-btn">
-                        <div>
-                            <h2>الخدمات</h2>
-                        </div>
-                        <div class="controls">
-                            <button onclick="prevSlide()">&lt;</button>
-                            <button onclick="nextSlide()">&gt;</button>
-                        </div>
-                    </div>
-                </div>
+	
 
-                <div class="slide-Shadow">
-                    <div class="col-11 slider">
-                        <div class="slides">
-                            <div class="slide">
-                                <img src="images/service-img1.png" alt="" class="service-img">
-                                <div class="overlay-s">صيانة غرف ومستودعات التبريد والتجميد</div>
-                            </div>
-                            <div class="slide">
-                                <img src="images/service-img2.png" alt="" class="service-img">
-                                <div class="overlay-s">صيانة صناديق السيارات المبردة</div>
-                            </div>
-                            <div class="slide">
-                                <img src="images/service-img3.png" alt="" class="service-img">
-                                <div class="overlay-s">صيانة وحدات تبريد السيارات المبردة</div>
-                            </div>
-                            <div class="slide hiden-img">
-                                <img src="images/service-img4.png" alt="" class="service-img">
-                                <div class="overlay-s">أنظمة شفط الفنادق والتبريد المركزية</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+	
 
-            </div>
-        </section>
+<!-- introduce -->
+<section id="about" class="about-section">
+	<div class=" col-3 about-image">
+		<img src="assets/images/pic/introduce-img.png" alt="تعرف علينا">
+	</div>
+	<div class="col-8 about-text">
+		<h2>نعرفك علينا</h2>
+		<p>
+			تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية. من خلال سنوات من
+			البحث والتطوير والتوسع ، أدخلنا خطوطًا متنوعة تشمل المزيد من الصناعات المعدنية بالإضافة إلى حلول
+			التبريد
+			التجاري الثابت والنقل. توسعت خدمات مسير لتخدم قطاعات أكبر من العملاء لتشمل خدمات ما بعد البيع في
+			مبيعات
+			قطع الغيار وصيانة أنظمة التبريد التجارية ومراكز تقديم الطعام والقهوة. يقع مصنع مسير الصناعي في
+			المدينة
+			الصناعية الأولى بمحافظة القصيم ، سلة غذاء المملكة من الخضار والتمور. نفخر بكوننا المصنع الوحيد من
+			نوعه
+			في المنطقة وجميع مناطق شمال المملكة ، مما يجعلنا مسؤولين عن تقديم الخدمة وتلبية احتياجات ومتطلبات
+			عملائنا لتحقيق رؤية المملكة في تأمين الغذاء و سلاسل التوريد لجميع أنحاء المملكة. يقدم مصنع مسير
+			الصناعي
+			مجموعة متنوعة من المنتجات والخدمات والحلول المتكاملة التي تخدم مجموعة واسعة من العملاء في العديد من
+			القطاعات المختلفة </p>
+	</div>
+</section>
 
 
+<!-- Services -->
+<section id="service" class="service">
+	<div class="services-container">
+		<div class="col-1 service-btn">
+			<div class="control-tit-btn">
+				<div>
+					<h2 class="tit-head">الخدمات</h2>
+				</div>
+				<div class="controls">
+					<button onclick="prevSlide()">&lt;</button>
+					<button onclick="nextSlide()">&gt;</button>
+				</div>
+			</div>
+		</div>
 
-        <!-- Products -->
-        <h2 class="tit-head">المنتجات</h2>
+		<div class="slide-Shadow">
+			<div class="col-11 slider">
+				<div class="slides">
+					<div class="slide">
+						<img src="assets/images/pic/service-img1.png" alt="" class="service-img">
+						<div class="overlay-s">صيانة غرف ومستودعات التبريد والتجميد</div>
+					</div>
+					<div class="slide">
+						<img src="assets/images/pic/service-img2.png" alt="" class="service-img">
+						<div class="overlay-s">صيانة صناديق السيارات المبردة</div>
+					</div>
+					<div class="slide">
+						<img src="assets/images/pic/service-img3.png" alt="" class="service-img">
+						<div class="overlay-s">صيانة وحدات تبريد السيارات المبردة</div>
+					</div>
+					<div class="slide hiden-img">
+						<img src="assets/images/pic/service-img4.png" alt="" class="service-img">
+						<div class="overlay-s">أنظمة شفط الفنادق والتبريد المركزية</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <section id="Products" class="Products">
-            <div class="card-prod">
-                <img src="images/Product-img1.png" alt="صورة">
-                <div class="card-content">
-                    <div class="down-left-arrow">➜</div>
-                    <h3 class="card-title" data-lang="titlecard1">غرف و مستودعات التبريد و التجميد</h3>
-                    <p class="card-description">
-                        مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في بيئات
-                        محكومة بدرجات حرارة منخفضة.
-                        <span class="extra-text" style="display: none;"> تعتمد مسير على أحدث التقنيات لضمان الحفاظ على
-                            الجودة والسلامة
-                            للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد فعّالة تلبي
-                            احتياجات الصناعات التي تتطلب تخزينًا طويل الأمد تحت درجات حرارة ثابتة، مع توفير مستويات
-                            عالية من
-                            الأمان والنظافة.</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="card-prod">
-                <img src="images/Product-img3.png" alt="صورة">
-                <div class="card-content">
-                    <div class="down-left-arrow">➜</div>
-                    <h3 class="card-title">السيارات المبردة و المجمدة</h3>
-                    <p class="card-description">
-                        مستودعات التبريد والتجميد من مسير توفر حلول تخزين <span class="extra-text"
-                            style="display: none;"></span>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Excellence -->
-        <div class="tit-head-m"></div>
-        <h2 class="tit-head">اهم ما يميزنا</h2>
-        </div>
-
-        <section id="Excellence" class="Excellence">
-            <div class="wrapper">
-                <div class="container-slider">
-                    <input style="display: none;" type="radio" name="slide" id="c1" checked>
-                    <label for="c1" class="card">
-                        <div class="row">
-                            <div class="description">
-                                <h4>أكثر من 17 عاما من الخبرة</h4>
-                                <p>تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.
-                                </p>
-                            </div>
-                        </div>
-                    </label>
-                    <input style="display: none;" type="radio" name="slide" id="c2">
-                    <label for="c2" class="card">
-
-                    </label>
-                    <input style="display: none;" type="radio" name="slide" id="c3">
-                    <label for="c3" class="card">
-                    </label>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Success -->
-        <div class="tit-head-m">
-            <h2 class="tit-head">شركاء النجاح</h2>
-        </div>
-
-        <section id="Partners-of-success" class="Partners-of-success">
-            <div class="logos">
-                <div class="logos-slide">
-                    <img src="images/slider-logo.png" />
-                    <img src="images/slider-logo.png" />
-                    <img src="images/slider-logo.png" />
-                    <img src="images/slider-logo.png" />
-                    <img src="images/slider-logo.png" />
-                    <img src="images/slider-logo.png" />
-                    <img src="images/slider-logo.png" />
-                    <img src="images/slider-logo.png" />
-                    <img src="images/slider-logo.png" />
-                    <img src="images/slider-logo.png" />
-                    <img src="images/slider-logo.png" />
-                </div>
-            </div>
-        </section>
+	</div>
+</section>
 
 
 
+<!-- Products -->
+<h2 class="tit-head">المنتجات</h2>
 
-        <!-- Contact -->
-        <section class="contact-form">
-            <div class="form-container">
-                <h2>تواصل معنا عبر واتساب</h2>
-                <form id="contactForm">
-                    <input type="text" name="name" placeholder="الاسم" required>
-                    <input type="tel" name="phone" style="text-align: right;" placeholder="هاتفك" required>
-                    <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-                    <textarea name="message" placeholder="  الرسالة..." required></textarea>
-                    <button type="submit">إرسال</button>
-                </form>
-            </div>
-            <div class="image-container">
-                <img src="images/Contact-img.png" alt="تواصل عبر واتساب">
-            </div>
-        </section>
-    </section>
+<section id="Products" class="Products">
+	<div class="card-prod">
+		<img src="assets/images/pic/Product-img1.png" alt="صورة">
+		<div class="card-content">
+			<div class="down-left-arrow">➜</div>
+			<h3 class="card-title" data-lang="titlecard1">غرف و مستودعات التبريد و التجميد</h3>
+			<p class="card-description">
+				مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في بيئات
+				محكومة بدرجات حرارة منخفضة.
+				<span class="extra-text" style="display: none;"> تعتمد مسير على أحدث التقنيات لضمان الحفاظ على
+					الجودة والسلامة
+					للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد فعّالة تلبي
+					احتياجات الصناعات التي تتطلب تخزينًا طويل الأمد تحت درجات حرارة ثابتة، مع توفير مستويات
+					عالية من
+					الأمان والنظافة.</span>
+			</p>
+		</div>
+	</div>
+
+	<div class="card-prod">
+		<img src="assets/images/pic/Product-img3.png" alt="صورة">
+		<div class="card-content">
+			<div class="down-left-arrow">➜</div>
+			<h3 class="card-title">السيارات المبردة و المجمدة</h3>
+			<p class="card-description">
+				مستودعات التبريد والتجميد من مسير توفر حلول تخزين <span class="extra-text"
+					style="display: none;"></span>
+			</p>
+		</div>
+	</div>
+</section>
 
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <!-- لوجو الشركة -->
-            <div class="logo-container">
-                <img src="images/Footer-img.png" alt="لوجو الشركة">
-            </div>
+<!-- Excellence -->
+<div class="tit-head-m"></div>
+<h2 class="tit-head">اهم ما يميزنا</h2>
+</div>
 
-            <!-- أيقونات مواقع التواصل الاجتماعي -->
-            <div class="social-icons">
-                <a href="#" target="_blank">
-                    <img src="images/insta-icon.png.jpg" alt="إنستجرام">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/whatsapp-icon.png.jpg" alt="واتساب">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/tiktok-icon.png.jpg" alt="تيك توك">
-                </a>
-            </div>
+<section id="Excellence" class="Excellence">
+	<div class="wrapper-slide">
+		<div class="container-slider">
+			<input style="display: none;" type="radio" name="slide" id="c1" checked>
+			<label for="c1" class="card">
+					<div class="description">
+						<h4>أكثر من 17 عاما من الخبرة</h4>
+						<p>تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.
+						</p>
+					</div>
+			</label>
+			<input style="display: none;" type="radio" name="slide" id="c2">
+			<label for="c2" class="card">
 
-            <!-- فقرة نصية -->
-            <div class="footer-text">
-                <p>
-                    نتميز بتقديم خدمات عالية الجودة ونساعد عملاءنا في تلبية احتياجاتهم بأفضل الطرق الممكنة.
-                    نحن هنا دائمًا من أجلكم لتقديم حلول مبتكرة وفعّالة.
-                </p>
-            </div>
+			</label>
+			<input style="display: none;" type="radio" name="slide" id="c3">
+			<label for="c3" class="card">
+			</label>
+		</div>
+	</div>
+</section>
 
-            <!-- معلومات الاتصال -->
-            <div class="contact-info row">
-                <p class="col-3">المملكة العربية السعودية, القصيم</p>
-                <p class="col-3">0163242112 - 0553242112</p>
-                <p class="col-3">info@maseer.com.sa</p>
-                <p class="col-3"><a href="https://maseer.com.sa" target="_blank">https://maseer.com.sa</a></p>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>
-                &copy; جميع الحقوق محفوظة لـ مَسير © 2024
-            </p>
 
-        </div>
-        <div class="footer-copyright">
-            <p>
-                &copy; تم تصميمه بواسطة هتف
-            </p>
-        </div>
-    </footer>
+<!-- Success -->
+<div class="tit-head-m">
+	<h2 class="tit-head">شركاء النجاح</h2>
+</div>
+
+<section id="Partners-of-success" class="Partners-of-success">
+	<div class="logos">
+		<div class="logos-slide">
+			<img src="assets/images/pic/slider-logo.png" />
+			<img src="assets/images/pic/slider-logo.png" />
+			<img src="assets/images/pic/slider-logo.png" />
+			<img src="assets/images/pic/slider-logo.png" />
+			<img src="assets/images/pic/slider-logo.png" />
+			<img src="assets/images/pic/slider-logo.png" />
+			<img src="assets/images/pic/slider-logo.png" />
+			<img src="assets/images/pic/slider-logo.png" />
+		</div>
+	</div>
+</section>
+
+
+
+
+<!-- Contact -->
+<section class="contact-form">
+	<div class="form-container">
+		<h2>تواصل معنا عبر واتساب</h2>
+		<form id="contactForm">
+			<input type="text" name="name" placeholder="الاسم" required>
+			<input type="tel" name="phone" style="text-align: right;" placeholder="هاتفك" required>
+			<input type="email" name="email" placeholder="البريد الإلكتروني" required>
+			<textarea name="message" placeholder="  الرسالة..." required></textarea>
+			<button type="submit">إرسال</button>
+		</form>
+	</div>
+	<div class="image-container">
+		<img src="assets/images/pic/Contact-img.png" alt="تواصل عبر واتساب">
+	</div>
+</section>
+</section>
 
 
 
@@ -293,15 +280,157 @@
 
 
 
-    <!--script-->
 
-    <script src="js/bootstrap.js"></script>
 
-    <script src="js/jquery-3.7.1.js"></script>
 
-    <script src="js/main.js"></script>
 
-    <script src="js/popper.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+	<div class="footer-content">
+		<!-- لوجو الشركة -->
+		<div class="logo-container">
+			<img src="assets/images/pic/Footer-img.png" alt="لوجو الشركة">
+		</div>
+
+		<!-- أيقونات مواقع التواصل الاجتماعي -->
+		<div class="social-icons">
+			<a href="#" target="_blank">
+				<img src="assets/images/pic/insta-icon.png.jpg" alt="إنستجرام">
+			</a>
+			<a href="#" target="_blank">
+				<img src="assets/images/pic/whatsapp-icon.png.jpg" alt="واتساب">
+			</a>
+			<a href="#" target="_blank">
+				<img src="assets/images/pic/tiktok-icon.png.jpg" alt="تيك توك">
+			</a>
+		</div>
+
+		<!-- فقرة نصية -->
+		<div class="footer-text">
+			<p>
+				نتميز بتقديم خدمات عالية الجودة ونساعد عملاءنا في تلبية احتياجاتهم بأفضل الطرق الممكنة.
+				نحن هنا دائمًا من أجلكم لتقديم حلول مبتكرة وفعّالة
+			</p>
+		</div>
+
+		<!-- معلومات الاتصال -->
+		<div class="contact-info">
+			<div class="info">
+				<p>المملكة العربية السعودية, القصيم</p>
+				<p>0163242112 - 0553242112</p>
+				<p>info@maseer.com.sa</p>
+				<p>https://maseer.com.sa</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<p>
+			&copy; جميع الحقوق محفوظة لـ مَسير © 2024
+		</p>
+
+	</div>
+	<div class="footer-copyright">
+		<p>
+			&copy; تم تصميمه بواسطة هتف
+		</p>
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="assets/js/jquery.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script src="assets/js/bootsnav.js"></script>
+
+	<script src="assets/js/owl.carousel.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+	<script src="assets/js/custom.js"></script>
+
 </body>
 
 </html>
