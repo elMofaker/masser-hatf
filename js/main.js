@@ -1,3 +1,79 @@
+function adjustLayout() {
+    let width = window.innerWidth;
+    let navbar = document.querySelector(".navbar");
+    let container = document.querySelector(".container");
+
+    if (width <= 600) { // للهواتف
+        navbar.style.flexDirection = "column";
+        navbar.style.padding = "10px";
+        container.style.flexDirection = "column";
+        container.style.width = "100%";
+    } else if (width <= 1024) { // للأجهزة المتوسطة (تابلت)
+        navbar.style.flexDirection = "row";
+        container.style.flexDirection = "row";
+        container.style.justifyContent = "center";
+    } else { // لأجهزة الكمبيوتر
+        navbar.style.flexDirection = "row";
+        container.style.width = "80%";
+    }
+}
+
+// استدعاء الدالة عند تحميل الصفحة وعند تغيير الحجم
+window.addEventListener("load", adjustLayout);
+window.addEventListener("resize", adjustLayout);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let navbar = document.querySelector(".navbar");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+    let currentScrollY = window.scrollY;
+    let navbarHeight = navbar.offsetHeight;
+
+    // تحديث موقع الـ Navbar بناءً على الاتجاه
+    navbar.style.top = currentScrollY + "px";
+
+    // التأكد من عدم اختفاء الـ Navbar خارج الشاشة
+    if (currentScrollY < navbarHeight) {
+        navbar.style.top = "0px";
+    }
+
+    lastScrollY = currentScrollY;
+});
+
+
+
+
+
+
+
+
+
+
+
+
 // تغيير النص عند النقر على زر اللغة
 document.getElementById('languageButton').addEventListener('click', function () {
     const button = document.getElementById('languageButton');
