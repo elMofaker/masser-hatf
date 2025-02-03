@@ -1,98 +1,31 @@
 function adjustLayout() {
     let width = window.innerWidth;
-    
-    // navbar
-    let navbar = document.querySelector('.navbar');
-    let navLinks = document.querySelector('.nav-links');
-    let logo = document.querySelector('.logo img');
-    let languageButton = document.getElementById('languageButton');
+    let navbar = document.querySelector(".navbar");
+    let container = document.querySelector(".container");
 
-    // home section text
-    let heroText = document.querySelector('.welcome-hero-txt');
-
-    // section containers
-    let servicesContainer = document.querySelector('.services-container');
-    let productCards = document.querySelectorAll('.card-prod');
-    let footer = document.querySelector('.footer');
-    let slider = document.querySelector('.slider');
-    let contactForm = document.querySelector('.contact-form');
-
-    // Change navbar layout for small screens
-    if (width <= 600) {
-        // Navbar adjustments
-        navbar.style.flexDirection = 'column';
-        navLinks.style.flexDirection = 'column';
-        navLinks.style.alignItems = 'center';
-        logo.style.width = '100px';  // You can adjust this size accordingly
-        languageButton.style.marginTop = '10px';  // Adjust button position
-
-        // Hero text adjustments for smaller screens
-        heroText.style.textAlign = 'center';
-
-        // Adjust the product cards and services containers for small screens
-        servicesContainer.style.display = 'block';
-        productCards.forEach(card => card.style.width = '100%');
-        
-        // Service slider adjustments for mobile
-        slider.style.transform = 'scale(0.8)'; // Reduce size of slider to fit mobile screens
-        slider.style.marginLeft = 'auto';
-        slider.style.marginRight = 'auto';
-        
-        // Adjust contact form layout
-        contactForm.style.display = 'block';
-        contactForm.style.width = '100%';
-        contactForm.querySelector('form').style.textAlign = 'center';
-        
-    } else if (width <= 1024) {
-        // Navbar: switch back to row for tablet-size screens
-        navbar.style.flexDirection = 'row';
-        navLinks.style.flexDirection = 'row';
-        logo.style.width = '150px'; // Adjust size accordingly
-
-        // Adjust services section to fit the screen
-        servicesContainer.style.display = 'flex';
-        productCards.forEach(card => card.style.width = '45%');
-
-        // Service slider adjustments for tablet
-        slider.style.transform = 'scale(0.9)'; // Slightly bigger size for tablet
-        slider.style.marginLeft = 'auto';
-        slider.style.marginRight = 'auto';
-
-        // Adjust contact form layout for tablet
-        contactForm.style.display = 'block';
-        contactForm.style.width = '80%';
-    } else {
-        // For larger screens (desktops)
-        navbar.style.flexDirection = 'row';
-        navLinks.style.flexDirection = 'row';
-        logo.style.width = '200px'; // Adjust to original size
-        languageButton.style.marginTop = '0';  // Reset margin
-
-        // Adjust product cards to be in line for desktop
-        servicesContainer.style.display = 'flex';
-        productCards.forEach(card => card.style.width = '30%');
-        
-        // Service slider adjustments for desktop
-        slider.style.transform = 'scale(1)'; // Full size on larger screens
-        slider.style.marginLeft = '0';
-        slider.style.marginRight = '0';
-
-        // Adjust contact form layout for desktop
-        contactForm.style.display = 'flex';
-        contactForm.style.width = '50%';
-    }
-    
-    // Adjust footer layout for small screens
-    if (width <= 600) {
-        footer.style.textAlign = 'center';
-    } else {
-        footer.style.textAlign = 'left';
+    if (width <= 600) { // للهواتف
+        navbar.style.flexDirection = "column";
+        navbar.style.padding = "10px";
+        container.style.flexDirection = "column";
+        container.style.width = "100%";
+    } else if (width <= 1024) { // للأجهزة المتوسطة (تابلت)
+        navbar.style.flexDirection = "row";
+        container.style.flexDirection = "row";
+        container.style.justifyContent = "center";
+    } else { // لأجهزة الكمبيوتر
+        navbar.style.flexDirection = "row";
+        container.style.width = "80%";
     }
 }
 
 // استدعاء الدالة عند تحميل الصفحة وعند تغيير الحجم
 window.addEventListener("load", adjustLayout);
 window.addEventListener("resize", adjustLayout);
+
+
+
+
+
 
 
 
