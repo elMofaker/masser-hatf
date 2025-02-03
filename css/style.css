@@ -21,6 +21,7 @@ body {
 }
 
 /* home */
+
 .top-area {
     background-color: #ffffff00;
     color: white;
@@ -31,7 +32,8 @@ body {
     text-align: center;
 }
 
-/* تنسيق الـ Navbar */
+/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -43,13 +45,10 @@ body {
     border-radius: 50px;
 }
 
-/* تنسيق الشعار */
 .logo img {
     height: 50px;
-    /* يمكنك تعديل الارتفاع حسب الحاجة */
 }
 
-/* تنسيق قائمة الروابط */
 .nav-links {
     list-style-type: none;
     margin: 0;
@@ -73,24 +72,8 @@ body {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* تنسيق زر تغيير اللغة */
+
 .language-switcher button {
     background-color: #ffffff00;
     color: white;
@@ -105,6 +88,8 @@ body {
 .language-switcher button:hover {
     background-color: #ffffff00;
 }
+
+/*header*/
 
 .welcome-hero {
     border-bottom-right-radius: 16px;
@@ -177,6 +162,7 @@ body {
 
 
 /* introduce */
+
 .about-section {
     display: flex;
     align-items: center;
@@ -246,7 +232,6 @@ body {
 
 
 
-
 /* تنسيق قسم الخدمات */
 .service {
     flex: 1;
@@ -263,16 +248,16 @@ body {
 
 .services-container {
     display: flex;
-    padding: 100px 100px; /* قللت المسافة للحفاظ على المساحة */
-    justify-content: flex-start; /* لضبط العرض بشكل صحيح */
+    padding: 100px 100px;
+    justify-content: flex-start; 
     margin-left: 213px;
 }
 
 .slider {
     position: relative;
-    width: 100%; /* جعلت عرض السلايد 100% ليتناسب مع الحاوية */
-    max-width: 1085px; /* وضع حد أقصى للعرض */
-    overflow: hidden; /* إخفاء الجزء الذي يخرج من السلايد */
+    width: 100%;
+    max-width: 1085px;
+    overflow: hidden; 
     margin-top: 40px;
     margin-left: 20px;
 }
@@ -295,7 +280,6 @@ body {
     height: 250px;
     display: block;
 }
-
 
 .hiden-img {
     overflow: hidden;
@@ -331,7 +315,6 @@ body {
     gap: 15px;
 }
 
-
 .controls button {
     background: none;
     border: none;
@@ -361,7 +344,6 @@ body {
     transition: .3s linear;
 }
 
-
 .control-tit-btn{
     font-size: 18px;
     color: #000;
@@ -369,6 +351,100 @@ body {
     margin-right: 300px;
 }
 
+/* Media Queries */
+@media (max-width: 1024px) {
+    .services-container {
+        padding: 50px;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service-btn {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .control-tit-btn {
+        font-size: 16px;
+        margin-right: 0;
+    }
+
+    .slide img {
+        height: 200px;
+    }
+
+    .overlay-s {
+        font-size: 16px;
+    }
+
+    .slide-Shadow {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        padding: 40px;
+    }
+
+    .slider {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .slide img {
+        height: 180px;
+    }
+
+    .overlay-s {
+        font-size: 14px;
+    }
+
+    .control-tit-btn {
+        font-size: 14px;
+        margin-right: 0;
+    }
+
+    .controls button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-container {
+        padding: 20px;
+    }
+
+    .slider {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .slide img {
+        height: 160px;
+    }
+
+    .overlay-s {
+        font-size: 12px;
+    }
+
+    .control-tit-btn {
+        font-size: 12px;
+        margin-right: 0;
+    }
+
+    .controls button {
+        font-size: 18px;
+    }
+}
 
 
 
@@ -463,8 +539,6 @@ body {
 
 
 
-
-
 /* Excellence */
 
 .wrapper {
@@ -540,10 +614,6 @@ body {
     font-size: 16px;
 }
 
-
-
-
-
 input:checked+label {
     width: 600px;
 }
@@ -564,6 +634,9 @@ input:checked+label .description {
 .card[for="c3"] {
     background-image: url('../images/Excellence-img3.png');
 }
+
+
+
 
 
 /* success */
@@ -626,9 +699,6 @@ input:checked+label .description {
 
 
 
-
-
-
 /* contact */
 
 .contact-form {
@@ -638,39 +708,40 @@ input:checked+label .description {
     gap: 20px;
     flex-wrap: wrap;
     background: #475c6e;
-    /* الخلفية الزرقاء */
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 1281px;
+    width: 1024px;
     height: 601px;
-    margin-left: 120px;
+    margin-left: 250px;
     margin-right: 120px;
     margin-bottom: 100px;
     direction: rtl;
 }
 
+/* Form container */
 .form-container {
     flex: 1;
     text-align: center;
     color: white;
-    /* النص الأبيض داخل النموذج */
     margin-bottom: 20px;
 }
 
+/* Form title */
 .form-container h2 {
     font-size: 22px;
     color: white;
-    /* تغيير اللون إلى الأبيض */
     margin-bottom: 15px;
 }
 
+/* Form elements */
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+/* Inputs and textarea */
 input,
 textarea {
     width: 100%;
@@ -685,9 +756,9 @@ textarea {
     resize: none;
 }
 
+/* Button */
 button {
     background: #ffffff;
-    /* خلفية زر الإرسال باللون الأخضر */
     color: rgb(0, 0, 0);
     padding: 12px;
     border: none;
@@ -699,29 +770,91 @@ button {
 
 button:hover {
     background: #ffffff;
-    /* تدرج أخضر داكن عند التمرير */
 }
 
+/* Image container */
 .image-container {
     flex: 1;
     text-align: center;
 }
 
+/* Image styling */
 .image-container img {
     width: 510px;
     max-width: 100%;
     border-radius: 12px;
 }
 
+/* ----- Media Queries ----- */
 
+/* For tablets and smaller devices (e.g., portrait orientation) */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
 
+    .image-container img {
+        width: 80%;
+        margin-top: 15px;
+    }
 
+    .form-container h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .contact-form {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .form-container {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .form-container h2 {
+        font-size: 16px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .image-container img {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
 
 
 
 
 
 /*footer*/
+
 .footer {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
@@ -784,6 +917,7 @@ button:hover {
     border-top: 1px solid #434859;
     border-bottom: 1px solid #434859 ;
 }
+
 .footer-copyright p,.footer-copyright p a {
     color: #a8a9bf;
     font-size: 14px;
