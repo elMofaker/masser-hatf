@@ -26,24 +26,7 @@ window.addEventListener("resize", adjustLayout);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//nav
 
 let navbar = document.querySelector(".navbar");
 let lastScrollY = window.scrollY;
@@ -67,14 +50,8 @@ window.addEventListener("scroll", () => {
 
 
 
-
-
-
-
-
-
-
 // تغيير النص عند النقر على زر اللغة
+
 document.getElementById('languageButton').addEventListener('click', function () {
     const button = document.getElementById('languageButton');
     if (button.textContent === 'EN') {
@@ -85,11 +62,6 @@ document.getElementById('languageButton').addEventListener('click', function () 
         // هنا يمكنك إعادة اللغة إلى العربية
     }
 });
-
-
-
-
-
 
 let currentIndex = 0;
 const slides = document.querySelectorAll('.slide');
@@ -114,8 +86,8 @@ function updateSlidePosition() {
 
 
 
-//Products
 
+//Products
 
 document.querySelectorAll(".toggle-arrow").forEach(arrow => {
     arrow.addEventListener("click", function () {
@@ -138,6 +110,7 @@ document.querySelectorAll(".toggle-arrow").forEach(arrow => {
 
 
 
+
 //slide
 
 var copy = document.querySelector(".logos-slide").cloneNode(true);
@@ -147,136 +120,154 @@ document.querySelector(".logos").appendChild(copy);
 
 
 
-
 //translation
 
-// كائن يحتوي على النصوص باللغتين
 const translations = {
-    en: {
-        home: "Home",
-        about: "About Us",
-        products: "Products",
-        services: "Services",
-        partners: "Partners",
-        contact: "Contact Us",
-        slogan: "Innovation and Unmatched Quality in Packaging Solutions",
-        subSlogan: "Strong packaging solutions, innovative designs",
-        contactUs: "Contact Us",
-        whoWeAre: "Who We Are",
-        whoWeAreText: "Mesir industrial plant was established in 1990 in the field of metallurgical industry and household refrigeration products. Through years of R & D and expansion, we have introduced diversified lines that include more metallurgical industries as well as commercial stationary refrigeration and transportation solutions. Mesir services has expanded to serve larger segments of customers to include after-sales services in spare parts sales,maintenance of commercial refrigeration systems, catering and coffee centers. The maseer industrial factory is located in the first industrial city in Qassim governorate, the kingdom's food basket of vegetables and dates. We are proud to be the only factory of its kind in the region and all regions of the north of the kingdom, which makes us responsible for providing service and meeting the needs and requirements of our customers to achieve the vision of the kingdom in securing food and supply chains throughout the kingdom. Mesir industrial factory offers a variety of products, services and integrated solutions that serve a wide range of customers in many different sectors.",
-        servicesTitle: "Services",
-        service1: "Maintenance of cooling and freezing rooms",
-        service2: "Maintenance of refrigerated vehicle boxes",
-        service3: "Maintenance of refrigerated vehicle units",
-        service4: "Hotel suction and central cooling systems",
-        partnersTitle: "Products",
-        excellenceTitle: "What Sets Us Apart",
-        experience: "Over 17 years of experience",
-        description: "Maseer Industrial Factory was established in 1990 in the field of metal industries and household cooling products.",
-        contactFormTitle: "Contact us via WhatsApp",
-        product1Title: "Cooling and Freezing Rooms and Warehouses",
-        product1Description: "Maseer’s cooling and freezing warehouses provide integrated and advanced storage solutions to keep products in environments with controlled low temperatures. Maseer relies on the latest technologies to ensure product quality and safety, whether for food or medical items. These warehouses are equipped with efficient cooling systems to meet the needs of industries requiring long-term storage under stable temperatures, while providing high levels of safety and cleanliness.",
-        product2Title: "Refrigerated and Freezer Vehicles",
-        product2Description: "Maseer’s cooling and freezing warehouses provide storage solutions.",
-        footerText: "We are distinguished by providing high-quality services and helping our clients meet their needs in the best possible ways. We are always here for you to offer innovative and effective solutions.",
-        send: "Send",
-        location: "Saudi Arabia, Qassim",
-        phone: "0163242112 - 0553242112",
-        email: "info@maseer.com.sa",
-        website: "https://maseer.com.sa",
-        copyright: "All rights reserved to Maseer © 2024",
-        copyrightText: "© Designed by HATF",
-        },
-
-    ar: {
-        home: "الصفحة الرئيسية",
-        about: "من نحن",
-        products: "المنتجات",
-        services: "الخدمات",
-        partners: "شركاء النجاح",
-        contact: "اتصل بنا",
-        slogan: "ابتكار وجودة لا مثيل لها في حلول التغليف",
-        subSlogan: "حلول تغليف قوية، تصاميم مبتكرة",
-        contactUs: "تواصل معنا",
-        whoWeAre: "نعرفك علينا",
-        whoWeAreText: "تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية. من خلال سنوات من البحث والتطوير والتوسع ، أدخلنا خطوطًا متنوعة تشمل المزيد من الصناعات المعدنية بالإضافة إلى حلول التبريد التجاري الثابت والنقل. توسعت خدمات مسير لتخدم قطاعات أكبر من العملاء لتشمل خدمات ما بعد البيع في مبيعات قطع الغيار وصيانة أنظمة التبريد التجارية ومراكز تقديم الطعام والقهوة. يقع مصنع مسير الصناعي في المدينة الصناعية الأولى بمحافظة القصيم ، سلة غذاء المملكة من الخضار والتمور. نفخر بكوننا المصنع الوحيد من نوعه في المنطقة وجميع مناطق شمال المملكة ، مما يجعلنا مسؤولين عن تقديم الخدمة وتلبية احتياجات ومتطلبات عملائنا لتحقيق رؤية المملكة في تأمين الغذاء و سلاسل التوريد لجميع أنحاء المملكة. يقدم مصنع مسير الصناعي مجموعة متنوعة من المنتجات والخدمات والحلول المتكاملة التي تخدم مجموعة واسعة من العملاء في العديد من القطاعات المختلفة.",
-        servicesTitle: "الخدمات",
-        service1: "صيانة غرف ومستودعات التبريد والتجميد",
-        service2: "صيانة صناديق السيارات المبردة",
-        service3: "صيانة وحدات تبريد السيارات المبردة",
-        service4: "أنظمة شفط الفنادق والتبريد المركزية",
-        partnersTitle: "المنتجات",
-
-        experience: "أكثر من 17 عاما من الخبرة",
-        description: "تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.",
-        successTitle: "شركاء النجاح",
-        product1Title: "غرف و مستودعات التبريد و التجميد",
-        product1Description: "مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في بيئات محكومة بدرجات حرارة منخفضة. تعتمد مسير على أحدث التقنيات لضمان الحفاظ على الجودة والسلامة للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد فعّالة تلبي احتياجات الصناعات التي تتطلب تخزينًا طويل الأمد تحت درجات حرارة ثابتة، مع توفير مستويات عالية من الأمان والنظافة.",
-        product2Title: "السيارات المبردة و المجمدة",
-        product2Description: "مستودعات التبريد والتجميد من مسير توفر حلول تخزين.",
-        footerText: "نتميز بتقديم خدمات عالية الجودة ونساعد عملاءنا في تلبية احتياجاتهم بأفضل الطرق الممكنة. نحن هنا دائمًا من أجلكم لتقديم حلول مبتكرة وفعّالة.",
-        contactFormTitle: "تواصل معنا عبر واتساب",
-        send: "إرسال",
-        location: "المملكة العربية السعودية, القصيم",
-        phone: "0163242112 - 0553242112",
-        email: "info@maseer.com.sa",
-        website: "https://maseer.com.sa",
-        copyright: "جميع الحقوق محفوظة لـ مَسير © 2024",
-        copyrightText: "© تم تصميمه بواسطة هتف",
-        }
+    "ar": {
+        "home": "الصفحة الرئيسية",
+        "about": "من نحن",
+        "products": "المنتجات",
+        "services": "الخدمات",
+        "partners": "شركاء النجاح",
+        "contact": "اتصل بنا",
+        "slogan": "ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات كافة الصناعات",
+        "subSlogan": "حلول تغليف قوية، تصاميم مبتكرة",
+        "contactUs": "تواصل معنا",
+        "whoWeAre": "نعرفك علينا",
+        "whoWeAreText": "تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية. من خلال سنوات من البحث والتطوير والتوسع ، أدخلنا خطوطًا متنوعة تشمل المزيد من الصناعات المعدنية بالإضافة إلى حلول التبريد التجاري الثابت والنقل. توسعت خدمات مسير لتخدم قطاعات أكبر من العملاء لتشمل خدمات ما بعد البيع في مبيعات قطع الغيار وصيانة أنظمة التبريد التجارية ومراكز تقديم الطعام والقهوة. يقع مصنع مسير الصناعي في المدينة الصناعية الأولى بمحافظة القصيم ، سلة غذاء المملكة من الخضار والتمور. نفخر بكوننا المصنع الوحيد من نوعه في المنطقة وجميع مناطق شمال المملكة ، مما يجعلنا مسؤولين عن تقديم الخدمة وتلبية احتياجات ومتطلبات عملائنا لتحقيق رؤية المملكة في تأمين الغذاء و سلاسل التوريد لجميع أنحاء المملكة. يقدم مصنع مسير الصناعي مجموعة متنوعة من المنتجات والخدمات والحلول المتكاملة التي تخدم مجموعة واسعة من العملاء في العديد من القطاعات المختلفة",
+        "serviceTitle": "الخدمات",
+        "service1": "صيانة غرف ومستودعات التبريد والتجميد",
+        "service2": "صيانة صناديق السيارات المبردة",
+        "service3": "صيانة وحدات تبريد السيارات المبردة",
+        "service4": "أنظمة شفط الفنادق والتبريد المركزية",
+        "productTitle": "المنتجات",
+        "excellenceTitle": "اهم ما يميزنا",
+        "partnersTitle": "شركاء النجاح",
+        "contactFormTitle": "تواصل معنا عبر واتساب",
+        "namePlaceholder": "الاسم",
+        "phonePlaceholder": "هاتفك",
+        "emailPlaceholder": "البريد الإلكتروني",
+        "messagePlaceholder": "الرسالة...",
+        "sendButton": "إرسال",
+        "footerText": "نتميز بتقديم خدمات عالية الجودة...",
+        "address": "المملكة العربية السعودية, القصيم",
+        "productCard1Title": "غرف و مستودعات التبريد و التجميد",
+        "productCard1Description": "مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في بيئات محكومة بدرجات حرارة منخفضة. تعتمد مسير على أحدث التقنيات لضمان الحفاظ على الجودة والسلامة للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد فعّالة تلبي احتياجات الصناعات التي تتطلب تخزينًا طويل الأمد تحت درجات حرارة ثابتة، مع توفير مستويات عالية من الأمان والنظافة.",
+        "productCard2Title": "السيارات المبردة و المجمدة",
+        "productCard2Description": "مستودعات التبريد والتجميد من مسير توفر حلول تخزين.",
+        "excellenceCard1Title": "أكثر من 17 عاما من الخبرة",
+        "excellenceCard1Description": "تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.",
+        "excellenceCard2Title": "أكثر من 17 عاما من الخبرة",
+        "excellenceCard2Description": "تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.",
+        "excellenceCard3Title": "أكثر من 17 عاما من الخبرة",
+        "excellenceCard3Description": "تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.",
+    },
+    "en": {
+        "home": "Home",
+        "about": "About Us",
+        "products": "Products",
+        "services": "Services",
+        "partners": "Success Partners",
+        "contact": "Contact Us",
+        "slogan": "Unmatched Innovation and Quality in Packaging Solutions for All Industries",
+        "subSlogan": "Strong Packaging Solutions, Innovative Designs",
+        "contactUs": "Contact Us",
+        "whoWeAre": "Who We Are",
+        "whoWeAreText": "Maseer Industrial Factory was established in 1990 in the field of metal industries and household refrigeration products. Through years of research, development, and expansion, we introduced diverse lines that include more metal industries in addition to solutions for fixed commercial refrigeration and transportation. Maseer’s services have expanded to serve larger customer sectors, including after-sales services for spare parts sales and maintenance of commercial refrigeration systems, catering centers, and coffee shops. Maseer Industrial Factory is located in the First Industrial City in the Qassim region, the Kingdom’s food basket for vegetables and dates. We are proud to be the only factory of its kind in the region and all the northern parts of the Kingdom, making us responsible for providing service and meeting the needs and requirements of our customers to support the Kingdom’s vision of securing food and supply chains across the Kingdom. Maseer Industrial Factory offers a wide range of products, services, and integrated solutions that serve a wide variety of customers in many different sectors",
+        "serviceTitle": "Services",
+        "service1": "Maintenance of Cooling and Freezing Rooms & Warehouses",
+        "service2": "Maintenance of Refrigerated Vehicle Boxes",
+        "service3": "Maintenance of Refrigerated Vehicle Cooling Units",
+        "service4": "Hotel Exhaust and Central Cooling Systems",
+        "productTitle": "Products",
+        "excellenceTitle": "What Makes Us Special",
+        "partnersTitle": "Success Partners",
+        "contactFormTitle": "Contact Us via WhatsApp",
+        "namePlaceholder": "Name",
+        "phonePlaceholder": "Your Phone",
+        "emailPlaceholder": "Email",
+        "messagePlaceholder": "Your Message...",
+        "sendButton": "Send",
+        "footerText": "We are distinguished by providing high-quality services and help our customers meet their needs in the best possible way. We are always here for you to provide innovative and effective solutions.",
+        "address": "Kingdom of Saudi Arabia, Qassim",
+        "productCard1Title": "Cooling and Freezing Rooms & Warehouses",
+        "productCard1Description": "Maseer’s cooling and freezing warehouses provide integrated and advanced storage solutions to preserve products in environments with low temperatures. Maseer relies on the latest technologies to ensure the quality and safety of stored products, whether food or medical. These warehouses are equipped with efficient cooling systems to meet the needs of industries requiring long-term storage at stable temperatures, while providing high levels of safety and cleanliness.",
+        "productCard2Title": "Refrigerated and Frozen Vehicles",
+        "productCard2Description": "Maseer’s cooling and freezing warehouses provide storage solutions.",
+        "excellenceCard1Title": "Over 17 Years of Experience",
+        "excellenceCard1Description": "Maseer Industrial Factory was established in 1990 in the field of metal industries and home refrigeration products.",
+        "excellenceCard2Title": "Over 17 Years of Experience",
+        "excellenceCard2Description": "Maseer Industrial Factory was established in 1990 in the field of metal industries and home refrigeration products.",
+        "excellenceCard3Title": "Over 17 Years of Experience",
+        "excellenceCard3Description": "Maseer Industrial Factory was established in 1990 in the field of metal industries and home refrigeration products.",
+    }
 };
 
-// تغيير اللغة عند الضغط على الزر
+let currentLanguage = "ar";
+
 function toggleLanguage() {
-    let currentLang = document.documentElement.lang || "ar";
-    let newLang = currentLang === "ar" ? "en" : "ar";
-
-    // تغيير لغة الصفحة
-    document.documentElement.lang = newLang;
-
-    // تغيير النصوص بناءً على اللغة الجديدة
-    document.getElementById("languageButton").innerText = newLang === "ar" ? "EN" : "AR";
-    document.querySelector(".nav-links li:nth-child(1) a").innerText = translations[newLang].contact;
-    document.querySelector(".nav-links li:nth-child(2) a").innerText = translations[newLang].partners;
-    document.querySelector(".nav-links li:nth-child(3) a").innerText = translations[newLang].services;
-    document.querySelector(".nav-links li:nth-child(4) a").innerText = translations[newLang].products;
-    document.querySelector(".nav-links li:nth-child(5) a").innerText = translations[newLang].about;
-    document.querySelector(".nav-links li:nth-child(6) a").innerText = translations[newLang].home;
-    document.querySelector(".welcome-hero-txt h2").innerHTML = translations[newLang].slogan;
-    document.querySelector(".welcome-hero-txt p").innerText = translations[newLang].subSlogan;
-    document.querySelector(".welcome-btn").innerText = translations[newLang].contactUs;
-    document.querySelector(".about-text h2").innerText = translations[newLang].whoWeAre;
-    document.querySelector(".about-text p").innerText = translations[newLang].whoWeAreText;
-    document.querySelector(".service-btn h2").innerText = translations[newLang].servicesTitle;
-    document.querySelector(".slide:nth-child(1) .overlay-s").innerText = translations[newLang].service1;
-    document.querySelector(".slide:nth-child(2) .overlay-s").innerText = translations[newLang].service2;
-    document.querySelector(".slide:nth-child(3) .overlay-s").innerText = translations[newLang].service3;
-    document.querySelector(".slide:nth-child(4) .overlay-s").innerText = translations[newLang].service4;
-    document.querySelector(".tit-head").innerText = translations[newLang].excellenceTitle;
-    document.querySelector(".container-slider label[for='c1'] .description h4").innerText = translations[newLang].experience;
-    document.querySelector(".container-slider label[for='c1'] .description p").innerText = translations[newLang].description;
-    document.querySelector(".card-prod:nth-child(1) .card-title").innerText = translations[newLang].product1Title;
-    document.querySelector(".card-prod:nth-child(1) .card-description").innerText = translations[newLang].product1Description;
-    document.querySelector(".card-prod:nth-child(2) .card-title").innerText = translations[newLang].product2Title;
-    document.querySelector(".card-prod:nth-child(2) .card-description").innerText = translations[newLang].product2Description;
-    document.querySelector(".tit-head").innerText = translations[newLang].successTitle;
-    document.querySelector(".footer-text p").innerText = translations[newLang].footerText;
-    document.querySelector(".tit-head").innerText = translations[newLang].partnersTitle;
-    document.querySelector(".tit-head").innerText = translations[newLang].partnersTitle;
-    document.querySelector(".contact-form h2").innerText = translations[newLang].contactFormTitle;
-    document.querySelector("#contactForm button").innerText = translations[newLang].send;
-    document.querySelector(".contact-info p:nth-child(1)").innerText = translations[newLang].location;
-    document.querySelector(".contact-info p:nth-child(2)").innerText = translations[newLang].phone;
-    document.querySelector(".contact-info p:nth-child(3)").innerText = translations[newLang].email;
-    document.querySelector(".contact-info p:nth-child(4) a").innerText = translations[newLang].website;
-    document.querySelector(".footer-copyright p").innerText = translations[newLang].copyright;
-    document.querySelector(".footer-copyright:nth-child(2) p").innerText = translations[newLang].designedBy;
-    document.querySelector(".footer-copyright p").innerText = translations[newLang].copyrightText;
+    currentLanguage = currentLanguage === "ar" ? "en" : "ar";
+    document.getElementById("languageButton").textContent = currentLanguage === "ar" ? "EN" : "AR";
+    translatePage();
 }
 
-// تشغيل اللغة المحفوظة عند تحميل الصفحة
-window.onload = function () {
-    let savedLang = localStorage.getItem("language") || "ar";
-    document.documentElement.lang = savedLang;
-    toggleLanguage();
-};
+function translatePage() {
+    document.querySelectorAll(".scroll a").forEach((element, index) => {
+        const keys = ["contact", "partners", "services", "products", "about", "home"];
+        element.textContent = translations[currentLanguage][keys[index]];
+    });
+    
+    document.querySelector(".welcome-hero-txt h2").textContent = translations[currentLanguage]["slogan"];
+    document.querySelector(".welcome-hero-txt p").textContent = translations[currentLanguage]["subSlogan"];
+    document.querySelector(".welcome-btn").textContent = translations[currentLanguage]["contactUs"];
+    document.querySelector("#Who-we-are h2").textContent = translations[currentLanguage]["whoWeAre"];
+    document.querySelector("#Who-we-are p").textContent = translations[currentLanguage]["whoWeAreText"];
+    document.querySelector("#Services h2").textContent = translations[currentLanguage]["serviceTitle"];
+    
+    document.querySelectorAll(".overlay-s").forEach((element, index) => {
+        const keys = ["service1", "service2", "service3", "service4"];
+        element.textContent = translations[currentLanguage][keys[index]];
+    });
+    
+    document.querySelector("#Products h2").textContent = translations[currentLanguage]["productTitle"];
+    document.querySelector("#Excellence h2").textContent = translations[currentLanguage]["excellenceTitle"];
+    document.querySelector("#Partners-of-success h2").textContent = translations[currentLanguage]["partnersTitle"];
+    document.querySelector(".form-container h2").textContent = translations[currentLanguage]["contactFormTitle"];
+    document.querySelector("input[name='name']").placeholder = translations[currentLanguage]["namePlaceholder"];
+    document.querySelector("input[name='phone']").placeholder = translations[currentLanguage]["phonePlaceholder"];
+    document.querySelector("input[name='email']").placeholder = translations[currentLanguage]["emailPlaceholder"];
+    document.querySelector("textarea[name='message']").placeholder = translations[currentLanguage]["messagePlaceholder"];
+    document.querySelector("button[type='submit']").textContent = translations[currentLanguage]["sendButton"];
+    document.querySelector(".footer-text p").textContent = translations[currentLanguage]["footerText"];
+    document.querySelectorAll(".contact-info p")[0].textContent = translations[currentLanguage]["address"];
+
+    
+    // Translate product section
+    document.querySelectorAll(".card-title").forEach((element) => {
+        if (element.getAttribute("data-lang") === "titlecard1") {
+            element.textContent = translations[currentLanguage]["productCard1Title"];
+        } else {
+            element.textContent = translations[currentLanguage]["productCard2Title"];
+        }
+    });
+    
+    document.querySelectorAll(".card-description").forEach((element, index) => {
+        if (index === 0) {
+            element.textContent = translations[currentLanguage]["productCard1Description"];
+        } else {
+            element.textContent = translations[currentLanguage]["productCard2Description"];
+        }
+    });
+
+     // Translate Excellence section
+    document.querySelectorAll(".card .description h4").forEach((element, index) => {
+        const key = `excellenceCard${index + 1}Title`;
+        element.textContent = translations[currentLanguage][key];
+    });
+    
+    document.querySelectorAll(".card .description p").forEach((element, index) => {
+        const key = `excellenceCard${index + 1}Description`;
+        element.textContent = translations[currentLanguage][key];
+    });
+}
+
