@@ -291,8 +291,36 @@
             </div>
         </div>
     </div>
-
     <!-- end infinite-bar -->
+    <!-- start form -->
+    <div class="form py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-lg-block d-none">
+                    <img class="w-100" src="images/Contact-img.png" alt="img" style="height: 567px;">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="container">
+                        <div class="py-2 text-center">
+                            <h2>تواصل معنا عبر واتساب</h2>
+                        </div>
+
+                        <form id="contactForm">
+                            <input type="text" name="name" placeholder="الاسم الثنائي" required>
+                            <input type="tel" name="phone" style="text-align: right;" placeholder="رقم الجوال" required>
+                            <input type="text" name="company" placeholder="اسم المنشأة" required>
+                            <input type="text" name="position" placeholder="الصفة في المنشأة" required>
+                            <input type="text" name="city" placeholder="المدينة" required>
+                            <textarea name="message" placeholder="الرسالة..." required></textarea>
+                            <button type="submit">إرسال</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end form -->
     <!-- start script product -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -313,7 +341,9 @@
 
     </script>
     <!-- end infinite-bar -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>

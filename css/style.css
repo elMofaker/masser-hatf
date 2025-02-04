@@ -188,5 +188,48 @@
 
 /* end infinite-bar */
 /* start form */
+.form {
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    #contactForm input,
+    #contactForm textarea,
+    #contactForm button {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    #contactForm input[type="tel"] {
+        text-align: right;
+    }
+
+    #contactForm button {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #contactForm button:hover {
+        background-color: #45a049;
+    }
+
+    #contactForm textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+}
+
 
 /* end form  */
