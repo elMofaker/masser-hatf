@@ -231,5 +231,85 @@
     }
 }
 
-
 /* end form  */
+
+/* start footer */
+footer {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer {
+        background-color: #f9f9f9;
+        padding: 20px 0;
+    }
+
+    .footer .container img {
+        margin-bottom: 20px;
+    }
+
+    .footer .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .footer .contact-info ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer .contact-info ul li {
+        margin: 5px 0;
+    }
+
+    .footer .contact-info ul li a {
+        color: black;
+    }
+
+    .footer .rights p {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* إضافة الـ media query لتنسيق الموبايل */
+    @media (max-width: 768px) {
+        .footer .contact-info ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer .contact-info ul li {
+            margin: 10px 0;
+        }
+
+        .footer .social-links {
+            gap: 10px;
+        }
+
+        .footer .container p {
+            padding: 0 15px;
+        }
+    }
+}
+
+/* end footer */
