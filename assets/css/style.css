@@ -1,9 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-}
-
-*{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-o-box-sizing:border-box;
@@ -27,6 +24,7 @@ body{
     font-weight: 700;
     text-align: center;
 }
+
 
 
 a,a:hover,a:active,a:focus {
@@ -358,20 +356,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     height: auto;
 }
 
-.services-container {
-    display: flex;
-    padding: 100px 100px; /* قللت المسافة للحفاظ على المساحة */
-    justify-content: flex-start; /* لضبط العرض بشكل صحيح */
-    margin-left: 213px;
-}
-
 .slider {
-    position: relative;
-    width: 100%; /* جعلت عرض السلايد 100% ليتناسب مع الحاوية */
-    max-width: 1085px; /* وضع حد أقصى للعرض */
-    overflow: hidden; /* إخفاء الجزء الذي يخرج من السلايد */
-    margin-top: 40px;
-    margin-left: 20px;
+    /* position: relative; */
+    /* width: 100%; جعلت عرض السلايد 100% ليتناسب مع الحاوية */
+    /* max-width: 1085px; وضع حد أقصى للعرض */
+    /* overflow: hidden; إخفاء الجزء الذي يخرج من السلايد */
+    /* margin-top: 40px; */
+    /* margin-left: 20px; */
 }
 
 .slides {
@@ -1017,12 +1008,6 @@ button:hover {
     text-decoration: underline;
 }
 
-.footer-copyright {
-    height: 60px;
-    padding: 20px 0 17px;
-    border-top: 1px solid #434859;
-    border-bottom: 1px solid #434859 ;
-}
 .footer-copyright p,.footer-copyright p a {
     color: #a8a9bf;
     font-size: 14px;
