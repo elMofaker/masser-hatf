@@ -1,61 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title></title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <!-- home -->
-    <section id="home" class="welcome-hero">
-        <div class="top-area">
-            <!-- Navbar -->
-            <nav class="navbar ">
-                <!-- شعار الشركة على اليسار -->
-                <div class="logo">
-                    <img src="images/nav logo.png" alt="شعار الشركة">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/nav logo.png" width="100px" height="50px" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-primary">عربي / English</button>
                 </div>
-
-                <!-- قائمة الروابط -->
-                <ul class="nav-links">
-                    <li class="scroll"><a href="#contact">اتصل بنا</a></li>
-                    <li class="scroll"><a href="#partners">شركاء النجاح</a></li>
-                    <li class="scroll"><a href="#services">الخدمات</a></li>
-                    <li class="scroll"><a href="#products">المنتجات</a></li>
-                    <li class="scroll"><a href="#about">من نحن</a></li>
-                    <li class="scroll active"><a href="#home">الصفحة الرئيسية</a></li>
-                </ul>
-
-                <!-- زر تغيير اللغة -->
-                <div class="language-switcher">
-                    <button id="languageButton" onclick="toggleLanguage()">EN</button>
-                </div>
-
-            </nav>
+            </div>
+        </nav>
+    </header>
+    <!-- start hero -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
-
-        <div class="container">
-            <div class="welcome-hero-txt">
-                <h2>ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات <br /> كافة الصناعات</h2>
-                <p>حلول تغليف قوية، تصاميم مبتكرة</p>
-                <button class="welcome-btn">تواصل معنا</button>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/background.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center w-100 h-100"
+                    style="background: rgba(0, 0, 0, 0.5);">
+                    <h2 class="text-white">عنوان كبير</h2>
+                    <p class="text-white">هذا نص أصغر تحت العنوان الكبير.</p>
+                    <button class="btn btn-primary">زر الإجراء</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/background.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center w-100 h-100"
+                    style="background: rgba(0, 0, 0, 0.5);">
+                    <h2 class="text-white">عنوان كبير</h2>
+                    <p class="text-white">هذا نص أصغر تحت العنوان الكبير.</p>
+                    <button class="btn btn-primary">زر الإجراء</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/background.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center w-100 h-100"
+                    style="background: rgba(0, 0, 0, 0.5);">
+                    <h2 class="text-white">عنوان كبير</h2>
+                    <p class="text-white">هذا نص أصغر تحت العنوان الكبير.</p>
+                    <button class="btn btn-primary">زر الإجراء</button>
+                </div>
             </div>
         </div>
-    </section>
-
-
-    <!-- introduce -->
-    <section id="Who-we-are" class="about-section py-5">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- end hero -->
+    <!-- start about -->
+    <div class="about py-5">
         <div class="container">
             <div class="row">
-                <div class="center col-12 col-lg-6 about-image d-lg-block d-none">
-                    <img src="images/introduce-img.png" alt="تعرف علينا">
+                <div class="col-12 col-lg-6 d-lg-block d-none">
+                    <img src="images/about-img.svg" width="75%" height="100%" alt="img">
                 </div>
-                <div class="col-12 col-lg-6 about-text text-center text-lg-left">
+                <div class="col-12 col-lg-6 text-center text-lg-end">
                     <h2>نعرفك علينا</h2>
                     <p>
                         تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية. من خلال
@@ -75,19 +127,19 @@
                         الصناعي
                         مجموعة متنوعة من المنتجات والخدمات والحلول المتكاملة التي تخدم مجموعة واسعة من العملاء في العديد
                         من
-                        القطاعات المختلفة </p>
+                        القطاعات المختلفة
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <!-- Services -->
-    <section id="Services" class="service pt-5 pb-5">
-        <div class="services-container">
-            <div class="row justify-content-between">
-                <div class="col-3 service-btn">
-                    <div class="control-tit-btn">
+    </div>
+    <!-- end about -->
+    <!-- start slider -->
+    <div class="Slider py-5 overflow-hidden">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <div class="container">
                         <div>
                             <h2>الخدمات</h2>
                         </div>
@@ -97,229 +149,128 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="slide-Shadow center col-7">
-                    <div class="slider">
-                        <div class="slides">
-                            <div class="slide">
-                                <img src="images/service-img1.png" alt="" class="service-img">
-                                <div class="overlay-s">صيانة غرف ومستودعات التبريد والتجميد</div>
-                            </div>
-                            <div class="slide">
-                                <img src="images/service-img2.png" alt="" class="service-img">
-                                <div class="overlay-s">صيانة صناديق السيارات المبردة</div>
-                            </div>
-                            <div class="slide">
-                                <img src="images/service-img3.png" alt="" class="service-img">
-                                <div class="overlay-s">صيانة وحدات تبريد السيارات المبردة</div>
-                            </div>
-                            <div class="slide hiden-img">
-                                <img src="images/service-img4.png" alt="" class="service-img">
-                                <div class="overlay-s">أنظمة شفط الفنادق والتبريد المركزية</div>
-                            </div>
+                <div class="col-6">
+                    <div class="d-flex">
+                        <div class="slide">
+                            <img src="images/service-img1.png" alt="" class="service-img w-25">
+                            <div class="overlay-s">صيانة غرف ومستودعات التبريد والتجميد</div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/service-img2.png" alt="" class="service-img w-25">
+                            <div class="overlay-s">صيانة صناديق السيارات المبردة</div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/service-img3.png" alt="" class="service-img w-25">
+                            <div class="overlay-s">صيانة وحدات تبريد السيارات المبردة</div>
+                        </div>
+                        <div class="slide hiden-img">
+                            <img src="images/service-img4.png" alt="" class="service-img w-25">
+                            <div class="overlay-s">أنظمة شفط الفنادق والتبريد المركزية</div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </section>
-
-    <!-- Products -->
-    <section id="Products" class="Products py-5">
-        <h2 class="tit-head py-5">المنتجات</h2>
-        <div class="container d-flex justify-content-center align-items-center flex-column">
-            <div class="card-prod mb-5">
-                <img src="images/Product-img1.png" alt="صورة">
-                <div class="card-content">
-                    <div class="down-left-arrow">➜</div>
-                    <h3 class="card-title" data-lang="titlecard1">غرف و مستودعات التبريد و التجميد</h3>
-                    <p class="card-description">
-                        مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في بيئات
-                        محكومة بدرجات حرارة منخفضة.
-                        <span class="extra-text" style="display: none;"> تعتمد مسير على أحدث التقنيات لضمان الحفاظ على
-                            الجودة والسلامة
-                            للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد فعّالة تلبي
-                            احتياجات الصناعات التي تتطلب تخزينًا طويل الأمد تحت درجات حرارة ثابتة، مع توفير مستويات
-                            عالية من
-                            الأمان والنظافة.</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="card-prod">
-                <img src="images/Product-img3.png" alt="صورة">
-                <div class="card-content">
-                    <div class="down-left-arrow">➜</div>
-                    <h3 class="card-title">السيارات المبردة و المجمدة</h3>
-                    <p class="card-description">
-                        مستودعات التبريد والتجميد من مسير توفر حلول تخزين <span class="extra-text"
-                            style="display: none;"></span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Excellence -->
-    <section id="Excellence" class="Excellence py-5">
-        <h2 class="tit-head py-5">اهم ما يميزنا</h2>
-        <div class="container">
-            <div class="center">
-                <div class="container-slider">
-                    <input style="display: none; " type="radio" name="slide" id="c1" checked>
-                    <label for="c1" class="card d-flex justify-content-center align-items-center text-center">
-                        <div class="text-white d-flex align-items-center">
-                            <div class="description">
-                                <h4>أكثر من 17 عاما من الخبرة</h4>
-                                <p>تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.
-                                </p>
-                            </div>
-                        </div>
-                    </label>
-                    <input style="display: none;" type="radio" name="slide" id="c2" checked>
-                    <label for="c2" class="card d-flex justify-content-center align-items-center text-center">
-                        <div class="text-white d-flex align-items-center">
-                            <div class="description">
-                                <h4>أكثر من 17 عاما من الخبرة</h4>
-                                <p>تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.
-                                </p>
-                            </div>
-                        </div>
-                    </label>
-                    <input style="display: none;" type="radio" name="slide" id="c3" checked>
-                    <label for="c3" class="card d-flex justify-content-center align-items-center text-center">
-                        <div class="text-white d-flex align-items-center">
-                            <div class="description">
-                                <h4>أكثر من 17 عاما من الخبرة</h4>
-                                <p>تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.
-                                </p>
-                            </div>
-                        </div>
-                    </label>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Success -->
-    <section id="Partners-of-success" class="Partners-of-success py-5">
-        <div class="py-5">
-            <h2 class="tit-head">شركاء النجاح</h2>
-        </div>
-
-        <div class="logos">
-            <div class="logos-slide">
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-            </div>
-            <div class="logos-slide">
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-                <img src="images/slider-logo.png" />
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact-form py-5">
+    </div>
+    <!-- end slider -->
+    <!-- start product -->
+    <div class="product py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 d-lg-block d-none">
-                    <img class="w-100" src="images/Contact-img.png" alt="تواصل عبر واتساب">
+                <div class="col-12 col-lg-6">
+                    <div class="card toggle-card">
+                        <img src="images/Product-img1.png" class="card-img-top w-100" style="height: 200px;" alt="img">
+                        <div class="card-body">
+                            <h3>غرف و مستودعات التبريد و التجميد</h3>
+                            <p class="card-text short-text">
+                                مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في
+                                بيئات محكومة بدرجات حرارة منخفضة...
+                            </p>
+                            <p class="card-text full-text">
+                                مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في
+                                بيئات محكومة بدرجات حرارة منخفضة. تعتمد مسير على أحدث التقنيات لضمان الحفاظ على الجودة
+                                والسلامة للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد
+                                فعّالة تلبي احتياجات الصناعات التي تتطلب تخزينًا طويل الأمد تحت درجات حرارة ثابتة، مع
+                                توفير مستويات عالية من الأمان والنظافة.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="form-container">
-                        <h2>تواصل معنا عبر واتساب</h2>
-                        <form id="contactForm">
-                            <input type="text" name="name" placeholder="الاسم" required>
-                            <input type="tel" name="phone" placeholder="هاتفك" required>
-                            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-                            <textarea name="message" placeholder="  الرسالة..." required></textarea>
-                            <button type="submit">إرسال</button>
-                        </form>
+                    <div class="card toggle-card">
+                        <img src="images/Product-img1.png" class="card-img-top w-100" style="height: 200px;" alt="img">
+                        <div class="card-body">
+                            <h3>غرف و مستودعات التبريد و التجميد</h3>
+                            <p class="card-text short-text">
+                                مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في
+                                بيئات محكومة بدرجات حرارة منخفضة...
+                            </p>
+                            <p class="card-text full-text">
+                                مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في
+                                بيئات محكومة بدرجات حرارة منخفضة. تعتمد مسير على أحدث التقنيات لضمان الحفاظ على الجودة
+                                والسلامة للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد
+                                فعّالة تلبي احتياجات الصناعات التي تتطلب تخزينًا طويل الأمد تحت درجات حرارة ثابتة، مع
+                                توفير مستويات عالية من الأمان والنظافة.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer pt-5 text-center">
-        <div class="pt-3" style=" box-shadow: 1px -12px 36px -31px black;">
-            <div class="container">
-                <!-- لوجو الشركة -->
-                <div class="logo-container">
-                    <img src="images/Footer-img.png" alt="لوجو الشركة">
-                </div>
-                <div class="social-icons">
-                    <a href="https://" target="_blank">
-                        <img src="images/mdi_twitter.svg" alt="تويتر">
-                    </a>
-                    <a href="https://wa.me/201234567890" target="_blank">
-                        <img src=" images/ri_linkedin-fill.svg" alt="واتساب">
-                    </a>
-                    <a href="https://" target="_blank">
-                        <img src="images/ri_instagram-line.svg" alt="انستجرام">
-                    </a>
-                </div>
-                <div class="footer-text py-3">
-                    <p>
-                        نتميز بتقديم خدمات عالية الجودة ونساعد عملاءنا في تلبية احتياجاتهم بأفضل الطرق الممكنة.
-                        نحن هنا دائمًا من أجلكم لتقديم حلول مبتكرة وفعّالة.
-                    </p>
-                </div>
-                <div class="contact-info row">
-                    <p class="col-3">المملكة العربية السعودية, القصيم</p>
-                    <p class="col-3">0163242112 - 0553242112</p>
-                    <p class="col-3">info@maseer.com.sa</p>
-                    <p class="col-3"><a href="https://maseer.com.sa" target="_blank">https://maseer.com.sa</a></p>
+    </div>
+    <!-- end product -->
+    <!-- start  -->
+    <div class="py-5">
+        <div class="container">
+            <div class="wrapper">
+                <div class="container">
+                    <input type="radio" name="slide" id="c1" checked>
+                    <label for="c1" class="card">
+                        <div class="row">
+                            <div class="icon">1</div>
+                            <div class="description">
+                                <h4>Winter</h4>
+                                <p>Winter has so much to offer -
+                                    creative activities</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c2">
+                    <label for="c2" class="card">
+                        <div class="row">
+                            <div class="icon">2</div>
+                            <div class="description">
+                                <h4>Digital Technology</h4>
+                                <p>Gets better every day -
+                                    stay tuned</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c3">
+                    <label for="c3" class="card">
+                        <div class="row">
+                            <div class="icon">3</div>
+                            <div class="description">
+                                <h4>Globalization</h4>
+                                <p>Help people all over the world</p>
+                            </div>
+                        </div>
+                    </label>
                 </div>
             </div>
-
-            <!-- فقرة نصية -->
-
         </div>
-        <div class="">
-            <hr />
-            <p>
-                &copy; جميع الحقوق محفوظة لـ مَسير © 2024
-            </p>
+    </div>
+    <!-- end -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".toggle-card").forEach(card => {
+                card.addEventListener("click", function () {
+                    this.classList.toggle("expanded");
+                });
+            });
+        });
 
-        </div>
-        <div class="">
-            <hr />
-            <p class="text-black-50 ">
-                &copy; تم تصميمه بواسطة هتف
-            </p>
-        </div>
-    </footer>
-    <!--script-->
-
-    <script src="js/bootstrap.js"></script>
-
-    <script src="js/jquery-3.7.1.js"></script>
-
-    <script src="js/main.js"></script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
