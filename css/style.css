@@ -291,7 +291,6 @@ footer {
         text-align: center;
     }
 
-    /* إضافة الـ media query لتنسيق الموبايل */
     @media (max-width: 768px) {
         .footer .contact-info ul {
             flex-direction: column;
