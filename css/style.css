@@ -1,5 +1,6 @@
 :root {
     --primary: #1A65A8;
+    --blue: #061828;
 }
 
 body {
@@ -114,7 +115,7 @@ header {
 
     .card-body img.arrow-icon {
         transition: transform 0.5s ease-in-out;
-        
+
     }
 
     .toggle-card.expanded .card-body img.arrow-icon {
@@ -409,24 +410,45 @@ header {
 /* end infinite-bar */
 /* start form */
 .form {
+
+    background-color: var(--blue);
+
+    h2{
+        color: whitesmoke;
+    }
+    img{
+        border-radius: 20px;
+    }
+
     #contactForm {
         display: flex;
         flex-direction: column;
         gap: 15px;
         margin: 0 auto;
         padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        background-color: #f9f9f9;
+        /* max-width: 400px; */
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        color: rgb(177, 177, 177);
+        direction: rtl;
+    }
+
+    #contactForm label {
+        font-weight: bold;
+        font-size: 14px;
     }
 
     #contactForm input,
     #contactForm textarea,
     #contactForm button {
-        padding: 10px;
+        padding: 10px 15px;
         font-size: 16px;
         border: 1px solid #ccc;
-        border-radius: 4px;
+        border-radius: 10px;
         width: 100%;
     }
 
@@ -435,14 +457,15 @@ header {
     }
 
     #contactForm button {
-        background-color: #4CAF50;
+        background-color: var(--primary);
         color: white;
         cursor: pointer;
         font-weight: bold;
+        border: none;
     }
 
     #contactForm button:hover {
-        background-color: #45a049;
+        opacity: 0.8;
     }
 
     #contactForm textarea {
@@ -450,6 +473,7 @@ header {
         min-height: 100px;
     }
 }
+
 
 /* end form */
 

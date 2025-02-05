@@ -235,7 +235,6 @@
             </div>
         </div>
     </div>
-
     <!-- end product -->
     <!-- start  card-pounter -->
     <div class="card-pounter py-5">
@@ -289,7 +288,7 @@
             <h2>شركاء النجاح</h2>
         </div>
         <div class="" style="box-shadow: 0px 0px 33px -22px black;">
-            <div class="container-fluid">
+            <div class="">
                 <div class="logos" style="box-shadow: 0px 0px 33px -22px black;">
                     <div class="logos-slide">
                         <img src="images/slider-logo.png" />
@@ -315,10 +314,12 @@
     <!-- end infinite-bar -->
     <!-- start form -->
     <div class="form py-5">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 d-lg-block d-none">
-                    <img class="w-100" src="images/Contact-img.png" alt="img" style="height: 567px;">
+                    <div class="container">
+                        <img class="w-100" src="images/pic.svg" alt="img" style="height: 80%;">
+                    </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="container">
@@ -327,14 +328,40 @@
                         </div>
 
                         <form id="contactForm">
-                            <input type="text" name="name" placeholder="الاسم الثنائي" required>
-                            <input type="tel" name="phone" style="text-align: right;" placeholder="رقم الجوال" required>
-                            <input type="text" name="company" placeholder="اسم المنشأة" required>
-                            <input type="text" name="position" placeholder="الصفة في المنشأة" required>
-                            <input type="text" name="city" placeholder="المدينة" required>
-                            <textarea name="message" placeholder="الرسالة..." required></textarea>
+                            <div class="form-group">
+                                <label for="name">الاسم الثنائي</label>
+                                <input type="text" id="name" name="name" placeholder="الاسم الثنائي" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">رقم الجوال</label>
+                                <input type="tel" id="phone" name="phone" placeholder="رقم الجوال" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">اسم المنشأة</label>
+                                <input type="text" id="company" name="company" placeholder="اسم المنشأة" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="position">الصفة في المنشأة</label>
+                                <input type="text" id="position" name="position" placeholder="الصفة في المنشأة"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="city">المدينة</label>
+                                <input type="text" id="city" name="city" placeholder="المدينة" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">الرسالة</label>
+                                <textarea id="message" name="message" placeholder="الرسالة..." required></textarea>
+                            </div>
+
                             <button type="submit">إرسال</button>
                         </form>
+
 
                     </div>
                 </div>
