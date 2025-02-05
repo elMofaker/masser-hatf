@@ -142,8 +142,14 @@ header {
     }
 }
 
-
 /* end hero */
+/* start about */
+.about{
+    p{
+        color: gray;
+    }
+}
+/* end about */
 /* start product */
 .product {
 
@@ -488,7 +494,7 @@ header {
         flex-direction: column;
         gap: 15px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 5px;
         /* max-width: 400px; */
     }
 
