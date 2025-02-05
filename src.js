@@ -117,9 +117,36 @@ document.querySelectorAll(".lang-option").forEach(item => {
             if (el.tagName !== 'INPUT' && el.tagName !== 'TEXTAREA' && el.getAttribute(`data-${selectedLang.toLowerCase()}`)) {
                 el.innerText = el.getAttribute(`data-${selectedLang.toLowerCase()}`);
             }
+
+            // إضافة تأثير الاتجاه بناءً على اللغة
+            if (el.classList.contains("reverse-text")) {
+                if (selectedLang === "Arabic") {
+                    el.style.direction = "rtl"; // اللغة العربية
+                    el.style.textAlign = "right"; // محاذاة النص لليمين
+                } else {
+                    el.style.direction = "ltr"; // اللغة الإنجليزية
+                    el.style.textAlign = "left"; // محاذاة النص لليسار
+                }
+            }
         });
+
+        // تحديث الاتجاه في العناصر التي تحمل كلاس "reverse-text"
+        let reverseElements = document.querySelectorAll(".reverse-text");
+        reverseElements.forEach(el => {
+            if (selectedLang === "Arabic") {
+                el.style.direction = "rtl"; // اللغة العربية
+                el.style.textAlign = "right"; // محاذاة النص لليمين
+            } else {
+                el.style.direction = "ltr"; // اللغة الإنجليزية
+                el.style.textAlign = "left"; // محاذاة النص لليسار
+            }
+        });
+
+        // تحديث النص المتعلق بالـ LangText
+        langText.innerText = selectedLang;
     });
 });
+
 
 
 // form
