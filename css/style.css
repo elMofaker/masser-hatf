@@ -80,12 +80,12 @@ header {
 .hero {
     position: relative;
     box-shadow: 0 8px 14px -8px black;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     overflow: hidden;
 
     img {
-        height: 70vh;
+        height: 100vh;
         width: 100%;
         object-fit: cover;
     }
@@ -116,6 +116,7 @@ header {
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding: 0px 20px ;
 
         h2 {
             font-weight: 700;
