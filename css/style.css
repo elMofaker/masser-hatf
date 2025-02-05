@@ -6,8 +6,6 @@
 body {
     overflow-x: hidden;
     font-family: 'Cairo', sans-serif;
-    
-    
 }
 
 .center {
@@ -74,15 +72,75 @@ header {
             }
         }
     }
+
 }
 
 /* end nav */
 /* start hero */
-.hero,
-.hero img {
+.hero {
+    position: relative;
+    box-shadow: 0 8px 14px -8px black;
     height: 70vh;
     width: 100%;
+    overflow: hidden;
+
+    img {
+        height: 70vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* إضافة الخلفية السوداء قبل العنصر */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        /* التعتيم الأسود */
+        z-index: 1;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        /* تأكد أن النص فوق الخلفية */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h2 {
+            font-weight: 700;
+            font-size: 30px;
+            color: white;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 15px;
+            color: white;
+        }
+
+        button {
+            padding: 10px 5rem;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+    }
 }
+
 
 /* end hero */
 /* start product */
@@ -416,10 +474,11 @@ header {
 
     background-color: var(--blue);
 
-    h2{
+    h2 {
         color: whitesmoke;
     }
-    img{
+
+    img {
         border-radius: 20px;
     }
 
