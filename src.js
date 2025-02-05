@@ -13,7 +13,7 @@ window.onscroll = function () {
 // swiper
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".swiper", {
-        slidesPerView: 8.9,
+        slidesPerView: 5,
         spaceBetween: 2,
         loop: true,
         pagination: {
@@ -124,26 +124,65 @@ document.querySelectorAll(".lang-option").forEach(item => {
 
 
 // form
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // منع إرسال الفورم بشكل تقليدي
+document.querySelectorAll(".lang-option").forEach(item => {
+    item.addEventListener("click", function (event) {
+        event.preventDefault();
+        let selectedLang = this.getAttribute("data-lang");
+        let langText = document.getElementById("langText");
+        let elements = document.querySelectorAll(".translatable");
 
-    // الحصول على البيانات من الحقول
-    let name = document.getElementById('name').value;
-    let phone = document.getElementById('phone').value;
-    let company = document.getElementById('company').value;
-    let position = document.getElementById('position').value;
-    let city = document.getElementById('city').value;
-    let message = document.getElementById('message').value;
+        // تحديث النص المتعلق بالـ LangText
+        langText.innerText = selectedLang;
 
-    // صياغة نص الرسالة
-    let textMessage = `اسم العميل: ${name}%0Aرقم الجوال: ${phone}%0Aاسم المنشأة: ${company}%0Aالصفة في المنشأة: ${position}%0Aالمدينة: ${city}%0Aالمطلوب: ${message}`;
+        // إزالة تأثير الاتجاه من العناصر التي تحمل كلاس "reverse-text"
+        let reverseElements = document.querySelectorAll(".reverse-text");
+        reverseElements.forEach(el => {
+            // إلغاء تأثير الاتجاه عندما نختار EN
+            if (selectedLang === "EN") {
+                el.style.direction = 'ltr';
+                el.style.textAlign = 'left';
+            } 
+            // إلغاء تأثير الاتجاه عندما نختار AR
+            else if (selectedLang === "AR") {
+                el.style.direction = 'rtl';
+                el.style.textAlign = 'right';
+            }
+        });
 
-    // رقم الواتساب
-    let whatsappNumber = "+966553242112";
+        // تغيير النصوص للـ عناصر الأخرى
+        elements.forEach(el => {
+            // تغيير النصوص للـ LABELs
+            if (el.tagName === 'LABEL') {
+                el.innerText = el.getAttribute(`data-${selectedLang.toLowerCase()}`);
+            }
 
-    // إنشاء رابط الواتساب
-    let whatsappLink = `https://wa.me/${whatsappNumber}?text=${textMessage}`;
+            // تغيير النصوص للـ INPUTs و TEXTAREAs
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                let placeholder = el.getAttribute(`data-${selectedLang.toLowerCase()}-placeholder`);
+                if (placeholder) {
+                    el.placeholder = placeholder;
+                }
+            }
 
-    // إعادة توجيه المستخدم إلى رابط الواتساب
-    window.location.href = whatsappLink;
+            // في حالة وجود نصوص مباشرة في العناصر الأخرى (مثل div أو p أو span)
+            if (el.tagName !== 'INPUT' && el.tagName !== 'TEXTAREA' && el.getAttribute(`data-${selectedLang.toLowerCase()}`)) {
+                el.innerText = el.getAttribute(`data-${selectedLang.toLowerCase()}`);
+            }
+
+            // إضافة تأثير الاتجاه بناءً على اللغة
+            if (el.classList.contains("reverse-text")) {
+                if (selectedLang === "Arabic") {
+                    el.style.direction = "rtl"; // اللغة العربية
+                    el.style.textAlign = "right"; // محاذاة النص لليمين
+                } else {
+                    el.style.direction = "ltr"; // اللغة الإنجليزية
+                    el.style.textAlign = "left"; // محاذاة النص لليسار
+                }
+            }
+        });
+
+        // تحديث النص المتعلق بالـ LangText
+        langText.innerText = selectedLang;
+    });
 });
+

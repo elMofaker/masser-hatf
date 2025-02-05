@@ -540,7 +540,7 @@ header {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        color: rgb(177, 177, 177);
+        color: rgb(237, 237, 237);
         direction: rtl;
     }
 
@@ -557,6 +557,18 @@ header {
         border: 1px solid #ccc;
         border-radius: 10px;
         width: 100%;
+        background: #62606042;
+        color: white;
+        outline: none;
+        border: 1px solid rgb(120, 120, 120);
+    }
+
+    input::focus,
+    textarea:focus {
+        background: #c4c4c442;
+        color: rgb(57, 57, 57);
+        outline: none;
+        border: 1px solid rgb(120, 120, 120);
     }
 
     #contactForm input[type="tel"] {
@@ -588,8 +600,8 @@ header {
         background-image: url('../images/pic.svg');
 
         .container {
-            background-color: rgba(255, 255, 255, 0.075);
-            backdrop-filter: blur(3px);
+            background-color: rgba(31, 31, 31, 0.499);
+            backdrop-filter: blur(6px);
             padding-top: 10px;
             padding-bottom: 10px;
             border-radius: 15px;
