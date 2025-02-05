@@ -114,10 +114,10 @@
     <div class="about py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 d-lg-block d-none">
+                <div class="col-12 col-lg-6 d-lg-block d-none center">
                     <img src="images/about-img.svg" width="75%" height="100%" alt="img">
                 </div>
-                <div class="col-12 col-lg-6 text-center text-lg-end">
+                <div class="col-12 col-lg-6 text-center text-lg-end d-flex justify-content-center flex-column">
                     <h2>نعرفك علينا</h2>
                     <p>
                         تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية. من خلال
@@ -145,11 +145,12 @@
     </div>
     <!-- end about -->
     <!-- start slider -->
-    <div class="Slider py-5">
+    <div class="Slider py-5 overflow-x-hidden">
         <div class="container-fluid">
             <div class="row justify-content-end">
 
-                <div class="col-2 text-center d-flex align-items-start controls-container" style="margin:  0 90px 0 0 ;">
+                <div class="col-2 text-center d-flex align-items-start controls-container"
+                    style="margin:  0 90px 0 0 ;">
                     <h2>الخدمات</h2>
                     <div class="custom-nav">
                         <button id="prev-slide">&lt;</button>
@@ -185,14 +186,18 @@
     <div class="product py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="card toggle-card">
+                <div class="col-12 col-lg-6 mb-3">
+                    <div class="card toggle-card shadow-lg ">
                         <img src="images/Product-img1.png" class="card-img-top w-100" style="height: 200px;" alt="img">
                         <div class="card-body">
-                            <h3>غرف و مستودعات التبريد و التجميد</h3>
-                            <p class="card-text short-text">
-                                مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في
-                                بيئات محكومة بدرجات حرارة منخفضة...
+                            <div class="d-flex justify-content-between">
+                                <h4 class="pb-2">غرف و مستودعات التبريد و التجميد</h4>
+                                <div class="d-flex justify-content-center align-items-start pt-2 pe-3">
+                                    <img src="images/arrow-right-up-svgrepo-com 1.svg" class="arrow-icon" alt="arrow">
+                                </div>
+                            </div>
+                            <p class="card-text short-text ">
+                                مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة...
                             </p>
                             <p class="card-text full-text">
                                 مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في
@@ -204,14 +209,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="card toggle-card">
+                <div class="col-12 col-lg-6 mb-3">
+                    <div class="card toggle-card shadow-lg ">
                         <img src="images/Product-img1.png" class="card-img-top w-100" style="height: 200px;" alt="img">
                         <div class="card-body">
-                            <h3>غرف و مستودعات التبريد و التجميد</h3>
-                            <p class="card-text short-text">
-                                مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في
-                                بيئات محكومة بدرجات حرارة منخفضة...
+                            <div class="d-flex justify-content-between">
+                                <h4 class="pb-2">غرف و مستودعات التبريد و التجميد</h4>
+                                <div class="d-flex justify-content-center align-items-start pt-2 pe-3">
+                                    <img src="images/arrow-right-up-svgrepo-com 1.svg" class="arrow-icon" alt="arrow">
+                                </div>
+                            </div>
+                            <p class="card-text short-text ">
+                                مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة...
                             </p>
                             <p class="card-text full-text">
                                 مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في
@@ -226,6 +235,7 @@
             </div>
         </div>
     </div>
+
     <!-- end product -->
     <!-- start  card-pounter -->
     <div class="card-pounter py-5">
@@ -391,6 +401,30 @@
                 });
             });
         });
+
+        // card
+        document.addEventListener("DOMContentLoaded", function () {
+            let cards = document.querySelectorAll(".card-body");
+
+            cards.forEach(card => {
+                let arrow = card.querySelector('img[alt="img"]');
+                card.addEventListener("click", function () {
+                    document.querySelectorAll('.card-body img[alt="img"]').forEach(img => {
+                        img.style.transform = "rotate(0deg)";
+
+                    });
+
+                    if (!card.classList.contains("open")) {
+                        arrow.style.transform = "rotate(180deg)";
+                        card.classList.add("open");
+                    } else {
+                        arrow.style.transform = "rotate(0deg)";
+                        card.classList.remove("open");
+                    }
+                });
+            });
+        });
+
     </script>
 
     <!-- end scroll nav -->

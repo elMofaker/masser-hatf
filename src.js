@@ -25,18 +25,22 @@ document.addEventListener("DOMContentLoaded", function () {
         breakpoints: {
 
             1024: {
-                slidesPerView: 3.2,
+                spaceBetween: 10,
+                slidesPerView: 4.4,
             },
 
             768: {
-                slidesPerView: 3.2,
+                spaceBetween: 8,
+                slidesPerView: 4.1,
             },
             420:{
-                slidesPerView: 1.7,
+                spaceBetween: 5,
+                slidesPerView: 2.5,
             },
 
             0: {
-                slidesPerView: 0.5,
+                spaceBetween: 5,
+                slidesPerView: 1.5,
             },
         }
     });

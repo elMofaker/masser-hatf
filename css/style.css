@@ -2,6 +2,9 @@
     --primary: #1A65A8;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 .center {
     display: flex;
@@ -80,6 +83,7 @@ header {
 /* end hero */
 /* start product */
 .product {
+
     .toggle-card {
         cursor: pointer;
         overflow: hidden;
@@ -102,6 +106,24 @@ header {
     .toggle-card.expanded .short-text {
         display: none;
     }
+
+    .card {
+        direction: rtl;
+        border-radius: 20px;
+    }
+
+    .card-body img.arrow-icon {
+        transition: transform 0.5s ease-in-out;
+        
+    }
+
+    .toggle-card.expanded .card-body img.arrow-icon {
+        transform: rotate(180deg);
+    }
+
+    p {
+        color: gray;
+    }
 }
 
 /* end product */
@@ -118,7 +140,7 @@ header {
 
     .card {
         width: 80px;
-        border-radius: .75rem;
+        border-radius: 15px;
         background-size: cover;
         cursor: pointer;
         overflow: hidden;
@@ -130,6 +152,10 @@ header {
         transition: .6s cubic-bezier(.28, -0.03, 0, .99);
         box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
         text-align: center;
+
+        img {
+            transform: matrix();
+        }
     }
 
     .card>.row {
@@ -206,6 +232,7 @@ header {
     padding: 40px 0;
 
 
+
     .controls-container {
         display: flex;
         flex-direction: column;
@@ -241,6 +268,12 @@ header {
         width: 130%;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        height: 200px;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
     }
 
     .swiper-slide {
@@ -254,6 +287,7 @@ header {
         justify-content: center;
         align-items: center;
         text-align: center;
+        height: 70%;
     }
 
     .swiper-slide img {
