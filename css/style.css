@@ -73,6 +73,28 @@ header {
         }
     }
 
+    .lang {
+        color: black;
+        border: 1px solid #ddd;
+        border-radius: 50px;
+        font-weight: bold;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .lang img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .dropdown-menu{
+        background-color: #4f4f4fbd;
+        backdrop-filter: blur(20px);
+    }
+
+
 }
 
 /* end nav */
@@ -116,7 +138,7 @@ header {
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 0px 20px ;
+        padding: 0px 20px;
 
         h2 {
             font-weight: 700;
@@ -144,11 +166,12 @@ header {
 
 /* end hero */
 /* start about */
-.about{
-    p{
+.about {
+    p {
         color: gray;
     }
 }
+
 /* end about */
 /* start product */
 .product {

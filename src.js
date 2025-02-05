@@ -86,3 +86,37 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+// lang
+document.querySelectorAll(".lang-option").forEach(item => {
+    item.addEventListener("click", function (event) {
+        event.preventDefault();
+        let selectedLang = this.getAttribute("data-lang");
+        let langText = document.getElementById("langText");
+        let elements = document.querySelectorAll(".translatable");
+
+        // تحديث النص المتعلق بالـ LangText
+        langText.innerText = selectedLang;
+
+        elements.forEach(el => {
+            // تغيير النصوص للـ LABELs
+            if (el.tagName === 'LABEL') {
+                el.innerText = el.getAttribute(`data-${selectedLang.toLowerCase()}`);
+            }
+
+            // تغيير النصوص للـ INPUTs و TEXTAREAs
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                let placeholder = el.getAttribute(`data-${selectedLang.toLowerCase()}-placeholder`);
+                if (placeholder) {
+                    el.placeholder = placeholder;
+                }
+            }
+
+            // في حالة وجود نصوص مباشرة في العناصر الأخرى (مثل div أو p أو span)
+            if (el.tagName !== 'INPUT' && el.tagName !== 'TEXTAREA' && el.getAttribute(`data-${selectedLang.toLowerCase()}`)) {
+                el.innerText = el.getAttribute(`data-${selectedLang.toLowerCase()}`);
+            }
+        });
+    });
+});

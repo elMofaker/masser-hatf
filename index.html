@@ -20,7 +20,7 @@
     <!-- start navbar -->
     <header>
         <nav class="navbar navbar-expand-lg" id="navbar">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/nav logo.png" width="100px" height="50px" />
                 </a>
@@ -34,26 +34,39 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">الصفحة الرئيسية</a>
+                            <a class="nav-link active translatable" aria-current="page" href="#" data-ar="الصفحة الرئيسية"
+                                data-en="Home">الصفحة الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">من نحن</a>
+                            <a class="nav-link translatable" href="#" data-ar="من نحن" data-en="About Us">من نحن</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">المنتجات </a>
+                            <a class="nav-link translatable" href="#" data-ar="المنتجات" data-en="Products">المنتجات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">الخدمات</a>
+                            <a class="nav-link translatable" href="#" data-ar="الخدمات" data-en="Services">الخدمات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">شركاء النجاح</a>
+                            <a class="nav-link translatable" href="#" data-ar="شركاء النجاح" data-en="Partners">شركاء النجاح</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">أتصل بنا</a>
+                            <a class="nav-link translatable" href="#" data-ar="أتصل بنا" data-en="Contact Us">أتصل بنا</a>
                         </li>
-
                     </ul>
-                    <button class="btn btn-outline-primary">AR</button>
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="dropdown">
+                            <button class="btn lang dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span id="langText">AR</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item lang-option" href="#" data-lang="EN">EN</a></li>
+                                <li><a class="dropdown-item lang-option" href="#" data-lang="AR">AR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </nav>
@@ -63,54 +76,61 @@
     <div class="hero">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button style="
-                background-color: white;
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
-                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button style="
-                background-color: white;
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button style="
-                background-color: white;
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <button style="background-color: white; width: 10px; height: 10px; border-radius: 50%;" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button style="background-color: white; width: 10px; height: 10px; border-radius: 50%;" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button style="background-color: white; width: 10px; height: 10px; border-radius: 50%;" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="20000">
                     <img src="images/background.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center w-100 h-100"
                         style="background: rgba(0, 0, 0, 0.5);">
-                        <h2 class="text-white pb-3">ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات كافة
-                            الصناعات.</h2>
-                        <p class="text-white mb-2">حلول تغليف قوية، تصاميم مبتكرة.</p>
-                        <button>تواصل معنا</button>
+                        <h2 class="text-white pb-3 translatable"
+                            data-ar="ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات كافة الصناعات."
+                            data-en="Unmatched innovation and quality in packaging solutions that meet the needs of all industries.">
+                            ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات كافة الصناعات.
+                        </h2>
+                        <p class="text-white mb-2 translatable" data-ar="حلول تغليف قوية، تصاميم مبتكرة."
+                            data-en="Strong packaging solutions, innovative designs.">
+                            حلول تغليف قوية، تصاميم مبتكرة.
+                        </p>
+                        <button class="translatable" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</button>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="20000">
                     <img src="images/background.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center w-100 h-100"
                         style="background: rgba(0, 0, 0, 0.5);">
-                        <h2 class="text-white pb-3">ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات كافة
-                            الصناعات.</h2>
-                        <p class="text-white  mb-2">حلول تغليف قوية، تصاميم مبتكرة.</p>
-                        <button class="">تواصل معنا</button>
+                        <h2 class="text-white pb-3 translatable"
+                            data-ar="ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات كافة الصناعات."
+                            data-en="Unmatched innovation and quality in packaging solutions that meet the needs of all industries.">
+                            ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات كافة الصناعات.
+                        </h2>
+                        <p class="text-white mb-2 translatable" data-ar="حلول تغليف قوية، تصاميم مبتكرة."
+                            data-en="Strong packaging solutions, innovative designs.">
+                            حلول تغليف قوية، تصاميم مبتكرة.
+                        </p>
+                        <button class="translatable" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</button>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="20000">
                     <img src="images/background.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center text-center w-100 h-100"
                         style="background: rgba(0, 0, 0, 0.5);">
-                        <h2 class="text-white pb-3">ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات كافة
-                            الصناعات.</h2>
-                        <p class="text-white mb-2">حلول تغليف قوية، تصاميم مبتكرة.</p>
-                        <button class="">تواصل معنا</button>
+                        <h2 class="text-white pb-3 translatable"
+                            data-ar="ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات كافة الصناعات."
+                            data-en="Unmatched innovation and quality in packaging solutions that meet the needs of all industries.">
+                            ابتكار وجودة لا مثيل لها في حلول التغليف التي تلبي احتياجات كافة الصناعات.
+                        </h2>
+                        <p class="text-white mb-2 translatable" data-ar="حلول تغليف قوية، تصاميم مبتكرة."
+                            data-en="Strong packaging solutions, innovative designs.">
+                            حلول تغليف قوية، تصاميم مبتكرة.
+                        </p>
+                        <button class="translatable" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</button>
                     </div>
                 </div>
             </div>
@@ -125,26 +145,21 @@
                     <img src="images/about-img.svg" width="75%" height="100%" alt="img">
                 </div>
                 <div class="col-12 col-lg-6 text-center text-lg-end d-flex justify-content-center flex-column">
-                    <h2 class="fw-bold pb-3">نعرفك علينا</h2>
-                    <p class="fw">
+                    <h2 class="fw-bold pb-3 translatable" data-ar="نعرفك علينا" data-en="Get to Know Us">نعرفك علينا
+                    </h2>
+
+                    <p class="fw translatable"
+                        data-ar="تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية. من خلال سنوات من البحث والتطوير والتوسع، أدخلنا خطوطًا متنوعة تشمل المزيد من الصناعات المعدنية بالإضافة إلى حلول التبريد التجاري الثابت والنقل. توسعت خدمات مسير لتخدم قطاعات أكبر من العملاء لتشمل خدمات ما بعد البيع في مبيعات قطع الغيار وصيانة أنظمة التبريد التجارية ومراكز تقديم الطعام والقهوة. يقع مصنع مسير الصناعي في المدينة الصناعية الأولى بمحافظة القصيم، سلة غذاء المملكة من الخضار والتمور. نفخر بكوننا المصنع الوحيد من نوعه في المنطقة وجميع مناطق شمال المملكة، مما يجعلنا مسؤولين عن تقديم الخدمة وتلبية احتياجات ومتطلبات عملائنا لتحقيق رؤية المملكة في تأمين الغذاء وسلاسل التوريد لجميع أنحاء المملكة. يقدم مصنع مسير الصناعي مجموعة متنوعة من المنتجات والخدمات والحلول المتكاملة التي تخدم مجموعة واسعة من العملاء في العديد من القطاعات المختلفة."
+                        data-en="Masir Industrial Factory was established in 1990 in the field of metal industries and household refrigeration products. Over the years of research, development, and expansion, we have introduced various production lines covering more metal industries in addition to fixed and transport commercial refrigeration solutions. Masir's services have expanded to serve a larger customer base, including after-sales services for spare parts sales, maintenance of commercial refrigeration systems, and catering and coffee service centers. Masir Industrial Factory is located in the First Industrial City of Qassim Province, the Kingdom’s food basket for vegetables and dates. We take pride in being the only factory of its kind in the region and all northern parts of the Kingdom, making us responsible for providing services and meeting our customers' needs to achieve the Kingdom’s vision in securing food and supply chains across the nation. Masir Industrial Factory offers a diverse range of products, services, and integrated solutions that serve a wide range of customers across various sectors.">
                         تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية. من خلال
-                        سنوات من
-                        البحث والتطوير والتوسع ، أدخلنا خطوطًا متنوعة تشمل المزيد من الصناعات المعدنية بالإضافة إلى حلول
-                        التبريد
-                        التجاري الثابت والنقل. توسعت خدمات مسير لتخدم قطاعات أكبر من العملاء لتشمل خدمات ما بعد البيع في
-                        مبيعات
-                        قطع الغيار وصيانة أنظمة التبريد التجارية ومراكز تقديم الطعام والقهوة. يقع مصنع مسير الصناعي في
-                        المدينة
-                        الصناعية الأولى بمحافظة القصيم ، سلة غذاء المملكة من الخضار والتمور. نفخر بكوننا المصنع الوحيد
-                        من
-                        نوعه
-                        في المنطقة وجميع مناطق شمال المملكة ، مما يجعلنا مسؤولين عن تقديم الخدمة وتلبية احتياجات
-                        ومتطلبات
-                        عملائنا لتحقيق رؤية المملكة في تأمين الغذاء و سلاسل التوريد لجميع أنحاء المملكة. يقدم مصنع مسير
-                        الصناعي
-                        مجموعة متنوعة من المنتجات والخدمات والحلول المتكاملة التي تخدم مجموعة واسعة من العملاء في العديد
-                        من
-                        القطاعات المختلفة
+                        سنوات من البحث والتطوير والتوسع، أدخلنا خطوطًا متنوعة تشمل المزيد من الصناعات المعدنية بالإضافة
+                        إلى حلول التبريد التجاري الثابت والنقل. توسعت خدمات مسير لتخدم قطاعات أكبر من العملاء لتشمل
+                        خدمات ما بعد البيع في مبيعات قطع الغيار وصيانة أنظمة التبريد التجارية ومراكز تقديم الطعام
+                        والقهوة. يقع مصنع مسير الصناعي في المدينة الصناعية الأولى بمحافظة القصيم، سلة غذاء المملكة من
+                        الخضار والتمور. نفخر بكوننا المصنع الوحيد من نوعه في المنطقة وجميع مناطق شمال المملكة، مما
+                        يجعلنا مسؤولين عن تقديم الخدمة وتلبية احتياجات ومتطلبات عملائنا لتحقيق رؤية المملكة في تأمين
+                        الغذاء وسلاسل التوريد لجميع أنحاء المملكة. يقدم مصنع مسير الصناعي مجموعة متنوعة من المنتجات
+                        والخدمات والحلول المتكاملة التي تخدم مجموعة واسعة من العملاء في العديد من القطاعات المختلفة.
                     </p>
                 </div>
             </div>
@@ -156,9 +171,8 @@
         <div class="container-fluid">
             <div class="row justify-content-end">
 
-                <div class="col-2 text-center d-flex align-items-start controls-container"
-                    style="margin:  0 90px 0 0 ;">
-                    <h2>الخدمات</h2>
+                <div class="col-2 text-center d-flex align-items-start controls-container" style="margin: 0 90px 0 0;">
+                    <h2 class="translatable" data-ar="الخدمات" data-en="Services">الخدمات</h2>
                     <div class="custom-nav">
                         <button id="prev-slide">&lt;</button>
                         <button id="next-slide">&gt;</button>
@@ -170,16 +184,28 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="images/service-img1.png" alt="">
-                                <div class="overlay-s">صيانة غرف ومستودعات التبريد والتجميد</div>
+                                <div class="overlay-s translatable" data-ar="صيانة غرف ومستودعات التبريد والتجميد"
+                                    data-en="Maintenance of cooling and freezing rooms and warehouses">
+                                    صيانة غرف ومستودعات التبريد والتجميد
+                                </div>
                             </div>
                             <div class="swiper-slide"><img src="images/service-img2.png" alt="">
-                                <div class="overlay-s">صيانة صناديق السيارات المبردة</div>
+                                <div class="overlay-s translatable" data-ar="صيانة صناديق السيارات المبردة"
+                                    data-en="Maintenance of refrigerated vehicle boxes">
+                                    صيانة صناديق السيارات المبردة
+                                </div>
                             </div>
                             <div class="swiper-slide"><img src="images/service-img3.png" alt="">
-                                <div class="overlay-s">صيانة وحدات تبريد السيارات المبردة</div>
+                                <div class="overlay-s translatable" data-ar="صيانة وحدات تبريد السيارات المبردة"
+                                    data-en="Maintenance of refrigerated vehicle cooling units">
+                                    صيانة وحدات تبريد السيارات المبردة
+                                </div>
                             </div>
                             <div class="swiper-slide"><img src="images/service-img4.png" alt="">
-                                <div class="overlay-s">أنظمة شفط الفنادق والتبريد المركزية</div>
+                                <div class="overlay-s translatable" data-ar="أنظمة شفط الفنادق والتبريد المركزية"
+                                    data-en="Hotel exhaust and central cooling systems">
+                                    أنظمة شفط الفنادق والتبريد المركزية
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -192,24 +218,31 @@
     <!-- start product -->
     <div class="product py-5">
         <div class="py-5 text-center">
-            <h2 class="fw-bold">المنتجات</h2>
+            <h2 class="fw-bold translatable" data-ar="المنتجات" data-en="Products">المنتجات</h2>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 mb-3">
-                    <div class="card toggle-card shadow-lg ">
+                    <div class="card toggle-card shadow-lg">
                         <img src="images/Product-img1.png" class="card-img-top w-100" style="height: 11rem;" alt="img">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <h4 class="pb-2">غرف و مستودعات التبريد و التجميد</h4>
+                                <h4 class="pb-2 translatable" data-ar="غرف و مستودعات التبريد و التجميد"
+                                    data-en="Cooling and Freezing Rooms and Warehouses">
+                                    غرف و مستودعات التبريد و التجميد
+                                </h4>
                                 <div class="d-flex justify-content-center align-items-start pt-2 pe-3">
                                     <img src="images/arrow-right-up-svgrepo-com 1.svg" class="arrow-icon" alt="arrow">
                                 </div>
                             </div>
-                            <p class="card-text short-text ">
+                            <p class="card-text short-text translatable"
+                                data-ar="مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة..."
+                                data-en="Masir's cooling and freezing warehouses provide integrated and advanced storage solutions...">
                                 مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة...
                             </p>
-                            <p class="card-text full-text">
+                            <p class="card-text full-text translatable"
+                                data-ar="مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في بيئات محكومة بدرجات حرارة منخفضة. تعتمد مسير على أحدث التقنيات لضمان الحفاظ على الجودة والسلامة للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد فعّالة تلبي احتياجات الصناعات التي تتطلب تخزينًا طويل الأمد تحت درجات حرارة ثابتة، مع توفير مستويات عالية من الأمان والنظافة."
+                                data-en="Masir's cooling and freezing warehouses provide integrated and advanced storage solutions to preserve products in controlled low-temperature environments. Masir relies on the latest technologies to ensure quality and safety for stored products, whether they are food or medical. These warehouses are equipped with efficient cooling systems that meet the needs of industries requiring long-term storage at stable temperatures, while providing high levels of security and hygiene.">
                                 مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في
                                 بيئات محكومة بدرجات حرارة منخفضة. تعتمد مسير على أحدث التقنيات لضمان الحفاظ على الجودة
                                 والسلامة للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد
@@ -219,20 +252,28 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-12 col-lg-6 mb-3">
-                    <div class="card toggle-card shadow-lg ">
+                    <div class="card toggle-card shadow-lg">
                         <img src="images/Product-img1.png" class="card-img-top w-100" style="height: 11rem;" alt="img">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <h4 class="pb-2">غرف و مستودعات التبريد و التجميد</h4>
+                                <h4 class="pb-2 translatable" data-ar="غرف و مستودعات التبريد و التجميد"
+                                    data-en="Cooling and Freezing Rooms and Warehouses">
+                                    غرف و مستودعات التبريد و التجميد
+                                </h4>
                                 <div class="d-flex justify-content-center align-items-start pt-2 pe-3">
                                     <img src="images/arrow-right-up-svgrepo-com 1.svg" class="arrow-icon" alt="arrow">
                                 </div>
                             </div>
-                            <p class="card-text short-text ">
+                            <p class="card-text short-text translatable"
+                                data-ar="مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة..."
+                                data-en="Masir's cooling and freezing warehouses provide integrated and advanced storage solutions...">
                                 مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة...
                             </p>
-                            <p class="card-text full-text">
+                            <p class="card-text full-text translatable"
+                                data-ar="مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في بيئات محكومة بدرجات حرارة منخفضة. تعتمد مسير على أحدث التقنيات لضمان الحفاظ على الجودة والسلامة للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد فعّالة تلبي احتياجات الصناعات التي تتطلب تخزينًا طويل الأمد تحت درجات حرارة ثابتة، مع توفير مستويات عالية من الأمان والنظافة."
+                                data-en="Masir's cooling and freezing warehouses provide integrated and advanced storage solutions to preserve products in controlled low-temperature environments. Masir relies on the latest technologies to ensure quality and safety for stored products, whether they are food or medical. These warehouses are equipped with efficient cooling systems that meet the needs of industries requiring long-term storage at stable temperatures, while providing high levels of security and hygiene.">
                                 مستودعات التبريد والتجميد من مسير توفر حلول تخزين متكاملة ومتطورة للحفاظ على المنتجات في
                                 بيئات محكومة بدرجات حرارة منخفضة. تعتمد مسير على أحدث التقنيات لضمان الحفاظ على الجودة
                                 والسلامة للمنتجات المخزنة، سواء كانت غذائية أو طبية. هذه المستودعات مجهزة بأنظمة تبريد
@@ -242,6 +283,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -249,7 +291,9 @@
     <!-- start  card-pounter -->
     <div class="card-pounter py-5">
         <div class="py-5 text-center">
-            <h2 class="fw-bold">اهم ما يميزنا</h2>
+            <h2 class="fw-bold translatable" data-ar="اهم ما يميزنا" data-en="What Sets Us Apart">
+                اهم ما يميزنا
+            </h2>
         </div>
         <div class="container">
             <div class="wrapper">
@@ -258,31 +302,47 @@
                     <label for="c1" class="card">
                         <div class="row">
                             <div class="description">
-                                <h4>أكثر من 17 عاما من الخبرة</h4>
-                                <p>
-                                    Wتأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.
+                                <h4 class="translatable" data-ar="أكثر من 17 عاما من الخبرة"
+                                    data-en="Over 17 Years of Experience">
+                                    أكثر من 17 عاما من الخبرة
+                                </h4>
+                                <p class="translatable"
+                                    data-ar="تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية."
+                                    data-en="Masir Industrial Factory was established in 1990 in the field of metal industries and home cooling products.">
+                                    تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.
                                 </p>
                             </div>
                         </div>
                     </label>
+
                     <input type="radio" name="slide" id="c2">
                     <label for="c2" class="card">
                         <div class="row">
                             <div class="description">
-                                <h4>نقدم افضل الخامات</h4>
-                                <p>
+                                <h4 class="translatable" data-ar="نقدم افضل الخامات"
+                                    data-en="We Offer the Best Materials">
+                                    نقدم افضل الخامات
+                                </h4>
+                                <p class="translatable"
+                                    data-ar="تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية."
+                                    data-en="Masir Industrial Factory was established in 1990 in the field of metal industries and home cooling products.">
                                     تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.
                                 </p>
                             </div>
                         </div>
                     </label>
+
                     <input type="radio" name="slide" id="c3">
                     <label for="c3" class="card">
                         <div class="row">
                             <div class="description">
-                                <h4>نقدم افضل الخامات</h4>
-                                <p>
-                                    تأسس مصنع مسير الصناعي عام 1990 في مجال الصناعات المعدنية ومنتجات التبريد المنزلية.
+                                <h4 class="translatable" data-ar="جودة لا مثيل لها" data-en="Unmatched Quality">
+                                    جودة لا مثيل لها
+                                </h4>
+                                <p class="translatable"
+                                    data-ar="نحن نستخدم أحدث التقنيات لضمان تقديم منتجات تبريد عالية الجودة."
+                                    data-en="We use the latest technology to ensure high-quality cooling products.">
+                                    نحن نستخدم أحدث التقنيات لضمان تقديم منتجات تبريد عالية الجودة.
                                 </p>
                             </div>
                         </div>
@@ -294,28 +354,30 @@
     <!-- end card-pounter -->
     <!-- start infinite-bar -->
     <div class="infinite-bar py-5">
-        <div class=" py-5 text-center">
-            <h2 class="fw-bold">شركاء النجاح</h2>
+        <div class="py-5 text-center">
+            <h2 class="fw-bold translatable" data-ar="شركاء النجاح" data-en="Success Partners">
+                شركاء النجاح
+            </h2>
         </div>
-        <div class="" style="box-shadow: 0px 0px 33px -22px black;">
-            <div class="">
+        <div class="shadow-box" style="box-shadow: 0px 0px 33px -22px black;">
+            <div class="logos-container">
                 <div class="logos" style="box-shadow: 0px 0px 33px -22px black;">
                     <div class="logos-slide">
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
-                        <img src="images/slider-logo.png" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
+                        <img src="images/slider-logo.png" alt="Partner Logo" />
                     </div>
                 </div>
             </div>
@@ -333,44 +395,49 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="container">
-                        <div class="py-2 text-center">
-                            <h2 class="fw-bold">تواصل معنا عبر واتساب</h2>
-                        </div>
-
+                        <div class="py-2 text-center translatable" data-ar="تواصل معنا عبر واتساب" data-en="Contact us on WhatsApp">
+                            <h2 class="fw-bold" id="langText">تواصل معنا عبر واتساب</h2>
+                        </div>                        
                         <form id="contactForm">
                             <div class="form-group">
-                                <label for="name">الاسم الثنائي</label>
-                                <input type="text" id="name" name="name" placeholder="أكتب الأسم الثنائي" required>
+                                <label for="name" class="translatable" data-ar="الاسم الثنائي" data-en="Full Name">الاسم الثنائي</label>
+                                <input type="text" id="name" name="name" placeholder="أكتب الأسم الثنائي" class="translatable" required
+                                    data-ar-placeholder="أكتب الأسم الثنائي" data-en-placeholder="Enter your full name">
                             </div>
-
+                        
                             <div class="form-group">
-                                <label for="phone">رقم الجوال</label>
-                                <input type="tel" id="phone" name="phone" placeholder="أكتب رقم الجوال" required>
+                                <label for="phone" class="translatable" data-ar="رقم الجوال" data-en="Phone Number">رقم الجوال</label>
+                                <input type="tel" id="phone" name="phone" placeholder="أكتب رقم الجوال" class="translatable" required
+                                    data-ar-placeholder="أكتب رقم الجوال" data-en-placeholder="Enter your phone number">
                             </div>
-
+                        
                             <div class="form-group">
-                                <label for="company">اسم المنشأة</label>
-                                <input type="text" id="company" name="company" placeholder="أكتب أسم المنشأة" required>
+                                <label for="company" class="translatable" data-ar="اسم المنشأة" data-en="Company Name">اسم المنشأة</label>
+                                <input type="text" id="company" name="company" placeholder="أكتب أسم المنشأة" class="translatable" required
+                                    data-ar-placeholder="أكتب أسم المنشأة" data-en-placeholder="Enter the company name">
                             </div>
-
+                        
                             <div class="form-group">
-                                <label for="position">الصفة في المنشأة</label>
-                                <input type="text" id="position" name="position" placeholder="أكتب الصفة في المنشأة"
-                                    required>
+                                <label for="position" class="translatable" data-ar="الصفة في المنشأة" data-en="Position in the Company">الصفة في المنشأة</label>
+                                <input type="text" id="position" name="position" placeholder="أكتب الصفة في المنشأة" class="translatable" required
+                                    data-ar-placeholder="أكتب الصفة في المنشأة" data-en-placeholder="Enter your position in the company">
                             </div>
-
+                        
                             <div class="form-group">
-                                <label for="city">المدينة</label>
-                                <input type="text" id="city" name="city" placeholder="أكتب المدينة" required>
+                                <label for="city" class="translatable" data-ar="المدينة" data-en="City">المدينة</label>
+                                <input type="text" id="city" name="city" placeholder="أكتب المدينة" class="translatable" required
+                                    data-ar-placeholder="أكتب المدينة" data-en-placeholder="Enter the city">
                             </div>
-
+                        
                             <div class="form-group">
-                                <label for="message">المطلوب</label>
-                                <textarea id="message" name="message" placeholder="أكتب المطلوب..." required></textarea>
+                                <label for="message" class="translatable" data-ar="المطلوب" data-en="Message">المطلوب</label>
+                                <textarea id="message" name="message" placeholder="أكتب المطلوب..." class="translatable" required
+                                    data-ar-placeholder="أكتب المطلوب..." data-en-placeholder="Enter your message..."></textarea>
                             </div>
-
-                            <button type="submit">إرسال</button>
+                        
+                            <button type="submit" class="translatable" data-ar="إرسال" data-en="Submit">إرسال</button>
                         </form>
+                        
 
 
                     </div>
@@ -399,16 +466,21 @@
                 </div>
             </div>
             <div class="py-3 container">
-                <p>
+                <p class="translatable"
+                    data-ar="نتميز بتقديم خدمات عالية الجودة ونساعد عملاءنا في تلبية احتياجاتهم بأفضل الطرق الممكنة. نحن هنا دائمًا من أجلكم لتقديم حلول مبتكرة وفعّالة."
+                    data-en="We provide high-quality services and help our clients meet their needs in the best possible ways. We are always here for you to offer innovative and effective solutions.">
                     نتميز بتقديم خدمات عالية الجودة ونساعد عملاءنا في تلبية احتياجاتهم بأفضل الطرق الممكنة.
                     نحن هنا دائمًا من أجلكم لتقديم حلول مبتكرة وفعّالة.
                 </p>
+
             </div>
             <div class="container contact-info">
                 <ul class="list-unstyled row">
-                    <li class="col-md-6 col-sm-12 mb-2">
+                    <li class="col-md-6 col-sm-12 mb-2 translatable" data-ar="المملكة العربية السعودية"
+                        data-en="Kingdom of Saudi Arabia">
                         <a href="http://">المملكة العربية السعودية</a>
                     </li>
+
                     <li class="col-md-6 col-sm-12 mb-2">
                         <a href="http://">0163242112</a> -
                         <a href="http://">0553242112</a>
@@ -424,10 +496,16 @@
         </div>
         <div class="rights">
             <hr />
-            <p>&copy; جميع الحقوق محفوظة لـ مَسير © 2024</p>
+            <p class="translatable" data-ar="جميع الحقوق محفوظة لـ مَسير © 2024"
+                data-en="All rights reserved for Maseer © 2024">
+                &copy; جميع الحقوق محفوظة لـ مَسير © 2024
+            </p>
             <hr />
-            <p class="text-black-50">&copy; تم تصميمه بواسطة هتف</p>
+            <p class="translatable text-black-50" data-ar="تم تصميمه بواسطة هتف" data-en="Designed by Hatf">
+                &copy; تم تصميمه بواسطة هتف
+            </p>
         </div>
+
     </footer>
     <!-- end footer -->
 
