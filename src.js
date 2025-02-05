@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             1024: {
                 spaceBetween: 10,
-                slidesPerView: 4.4,
+                slidesPerView: 6.4,
             },
 
             768: {
                 spaceBetween: 8,
-                slidesPerView: 4.1,
+                slidesPerView: 5,
             },
             420: {
                 spaceBetween: 5,
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
 
             0: {
-                spaceBetween: 5,
+                spaceBetween: 3,
                 slidesPerView: 1.5,
             },
         }

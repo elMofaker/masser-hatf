@@ -357,7 +357,7 @@ header {
 
     .swiper {
         margin: 1px 0 0 -41px;
-        width: 130%;
+        width: 137%;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         height: 200px;
@@ -430,7 +430,7 @@ header {
     /* استجابة للشاشات الصغيرة */
     @media (max-width: 768px) {
         .slide-Shadow {
-            width: 50%;
+            width: 35%;
             max-width: 100%;
         }
     }
