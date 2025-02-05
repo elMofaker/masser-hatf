@@ -13,12 +13,17 @@ window.onscroll = function () {
 // swiper
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".swiper", {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 2,
         loop: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 4,
+            },
         },
     });
 
@@ -30,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         swiper.slideNext();
     });
 });
+
 
 // prodact
 document.addEventListener("DOMContentLoaded", function () {
@@ -141,7 +147,7 @@ document.querySelectorAll(".lang-option").forEach(item => {
             if (selectedLang === "EN") {
                 el.style.direction = 'ltr';
                 el.style.textAlign = 'left';
-            } 
+            }
             // إلغاء تأثير الاتجاه عندما نختار AR
             else if (selectedLang === "AR") {
                 el.style.direction = 'rtl';
