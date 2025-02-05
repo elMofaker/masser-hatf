@@ -1,4 +1,4 @@
-// start scroll nav
+// scroll nav
 const navbar = document.getElementById('navbar');
 window.onscroll = function () {
     if (window.scrollY > 0) {
@@ -9,14 +9,14 @@ window.onscroll = function () {
         navbar.classList.remove('scrolled');
     };
 }
-// end scroll nav
 
 
-// start swiper
+
+// swiper
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".swiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
+        slidesPerView: 5,
+        spaceBetween: 6,
         loop: true,
         pagination: {
             el: ".swiper-pagination",
@@ -26,21 +26,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
             1024: {
                 spaceBetween: 10,
-                slidesPerView: 6.4,
+                slidesPerView: 5,
             },
 
             768: {
                 spaceBetween: 8,
-                slidesPerView: 5,
+                slidesPerView: 3,
             },
             420: {
                 spaceBetween: 5,
-                slidesPerView: 2.5,
+                slidesPerView: 2,
             },
 
             0: {
-                spaceBetween: 3,
-                slidesPerView: 1.5,
+                spaceBetween: 1,
+                slidesPerView: 0.5,
             },
         }
     });
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         swiper.slideNext();
     });
 });
-// end swiper
+
 
 
 // prodact

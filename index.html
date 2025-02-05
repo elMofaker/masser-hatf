@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="images/nav logo.png" width="100px" height="50px" />
+                    <img src="images/nav logo.png" width="120px" height="60px" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -34,28 +34,28 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active translatable reverse-text" aria-current="page" href="#"
+                            <a class="nav-link active translatable reverse-text" aria-current="page" href="#hero"
                                 data-ar="الصفحة الرئيسية" data-en="Home">الصفحة الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link translatable reverse-text" href="#" data-ar="من نحن"
+                            <a class="nav-link translatable reverse-text" href="#about" data-ar="من نحن"
                                 data-en="About Us">من نحن</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link translatable reverse-text" href="#" data-ar="المنتجات"
+                            <a class="nav-link translatable reverse-text" href="#product" data-ar="المنتجات"
                                 data-en="Products">المنتجات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link translatable reverse-text" href="#" data-ar="الخدمات"
+                            <a class="nav-link translatable reverse-text" href="#Slider" data-ar="الخدمات"
                                 data-en="Services">الخدمات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link translatable reverse-text" href="#" data-ar="شركاء النجاح"
+                            <a class="nav-link translatable reverse-text" href="#infinite-bar" data-ar="شركاء النجاح"
                                 data-en="Partners">شركاء
                                 النجاح</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link translatable reverse-text" href="#" data-ar="أتصل بنا"
+                            <a class="nav-link translatable reverse-text" href="#form" data-ar="أتصل بنا"
                                 data-en="Contact Us">أتصل
                                 بنا</a>
                         </li>
@@ -80,7 +80,7 @@
     </header>
     <!-- end navbar -->
     <!-- start hero -->
-    <div class="hero">
+    <div id="hero" class="hero">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button style="background-color: white; width: 10px; height: 10px; border-radius: 50%;" type="button"
@@ -145,7 +145,7 @@
     </div>
     <!-- end hero -->
     <!-- start about -->
-    <div class="about py-5">
+    <div id="about" class="about py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 d-lg-block d-none center">
@@ -174,11 +174,11 @@
     </div>
     <!-- end about -->
     <!-- start slider -->
-    <div class="Slider py-5 overflow-x-hidden">
+    <div id="Slider" class="Slider py-5 overflow-x-hidden">
         <div class="container-fluid">
             <div class="row justify-content-end">
 
-                <div class="col-2 text-center d-flex align-items-start controls-container" style="margin: 0 90px 0 0;">
+                <div class="col text-center d-flex align-content-md-start align-items-center controls-container" style="padding: 0 40px 0 0;">
                     <h2 class="translatable" data-ar="الخدمات" data-en="Services">الخدمات</h2>
                     <div class="custom-nav">
                         <button id="prev-slide">&lt;</button>
@@ -186,8 +186,7 @@
                     </div>
                 </div>
 
-                <!-- السلايدر -->
-                <div class="col-5 slide-Shadow">
+                <div class="col-10 slide-Shadow">
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="images/service-img1.png" alt="">
@@ -247,7 +246,7 @@
     </div>
     <!-- end slider -->
     <!-- start product -->
-    <div class="product py-5">
+    <div id="product" class="product py-5">
         <div class="py-5 text-center">
             <h2 class="fw-bold translatable" data-ar="المنتجات" data-en="Products">المنتجات</h2>
         </div>
@@ -320,7 +319,7 @@
     </div>
     <!-- end product -->
     <!-- start  card-pounter -->
-    <div class="card-pounter py-5">
+    <div id="card-pounter" class="card-pounter py-5">
         <div class="py-5 text-center">
             <h2 class="fw-bold translatable" data-ar="اهم ما يميزنا" data-en="What Sets Us Apart">
                 اهم ما يميزنا
@@ -384,7 +383,7 @@
     </div>
     <!-- end card-pounter -->
     <!-- start infinite-bar -->
-    <div class="infinite-bar py-5">
+    <div id="infinite-bar" class="infinite-bar py-5">
         <div class="py-5 text-center">
             <h2 class="fw-bold translatable" data-ar="شركاء النجاح" data-en="Success Partners">
                 شركاء النجاح
@@ -416,7 +415,7 @@
     </div>
     <!-- end infinite-bar -->
     <!-- start form -->
-    <div class="form py-5">
+    <div id="form" class="form py-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 d-lg-block d-none">
@@ -489,7 +488,7 @@
     </div>
     <!-- end form -->
     <!-- start footer -->
-    <footer class="footer pt-5 text-center">
+    <footer id="footer" class="footer pt-5 text-center">
         <div class="pt-3" style="box-shadow: 1px -12px 36px -31px black;">
             <div class="container">
                 <div>
