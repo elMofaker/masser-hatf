@@ -508,6 +508,9 @@ header {
 .form {
 
     background-color: var(--blue);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     h2 {
         color: whitesmoke;
@@ -568,6 +571,21 @@ header {
     #contactForm textarea {
         resize: vertical;
         min-height: 100px;
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    .form {
+        background-image: url('../images/pic.svg');
+        .container{
+            background-color: rgba(255, 255, 255, 0.075);
+            backdrop-filter: blur(3px);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 15px;
+        }
     }
 }
 
