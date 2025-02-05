@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 spaceBetween: 8,
                 slidesPerView: 4.1,
             },
-            420:{
+            420: {
                 spaceBetween: 5,
                 slidesPerView: 2.5,
             },
@@ -55,3 +55,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // end swiper
 
+
+// prodact
+document.addEventListener("DOMContentLoaded", function () {
+    let cards = document.querySelectorAll(".card-body");
+
+    cards.forEach(card => {
+        let arrow = card.querySelector('img[alt="img"]');
+        card.addEventListener("click", function () {
+            document.querySelectorAll('.card-body img[alt="img"]').forEach(img => {
+                img.style.transform = "rotate(0deg)";
+
+            });
+
+            if (!card.classList.contains("open")) {
+                arrow.style.transform = "rotate(180deg)";
+                card.classList.add("open");
+            } else {
+                arrow.style.transform = "rotate(0deg)";
+                card.classList.remove("open");
+            }
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".toggle-card").forEach(card => {
+        card.addEventListener("click", function () {
+            this.classList.toggle("expanded");
+        });
+    });
+});
