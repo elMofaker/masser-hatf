@@ -10,39 +10,16 @@ window.onscroll = function () {
     };
 }
 
-
-
 // swiper
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".swiper", {
-        slidesPerView: 5,
-        spaceBetween: 6,
+        slidesPerView: 8.9,
+        spaceBetween: 2,
         loop: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
-        breakpoints: {
-
-            1024: {
-                spaceBetween: 10,
-                slidesPerView: 5,
-            },
-
-            768: {
-                spaceBetween: 8,
-                slidesPerView: 3,
-            },
-            420: {
-                spaceBetween: 5,
-                slidesPerView: 2,
-            },
-
-            0: {
-                spaceBetween: 1,
-                slidesPerView: 0.5,
-            },
-        }
     });
 
     document.getElementById("prev-slide").addEventListener("click", function () {
@@ -53,8 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
         swiper.slideNext();
     });
 });
-
-
 
 // prodact
 document.addEventListener("DOMContentLoaded", function () {
@@ -86,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
 
 // lang
 document.querySelectorAll(".lang-option").forEach(item => {
@@ -165,7 +139,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     let textMessage = `اسم العميل: ${name}%0Aرقم الجوال: ${phone}%0Aاسم المنشأة: ${company}%0Aالصفة في المنشأة: ${position}%0Aالمدينة: ${city}%0Aالمطلوب: ${message}`;
 
     // رقم الواتساب
-    let whatsappNumber = "+201021170207";
+    let whatsappNumber = "+966553242112";
 
     // إنشاء رابط الواتساب
     let whatsappLink = `https://wa.me/${whatsappNumber}?text=${textMessage}`;

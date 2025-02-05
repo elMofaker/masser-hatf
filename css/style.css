@@ -117,7 +117,7 @@ header {
         object-fit: cover;
     }
 
-    /* إضافة الخلفية السوداء قبل العنصر */
+
     &::before {
         content: "";
         position: absolute;
@@ -126,7 +126,6 @@ header {
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
-        /* التعتيم الأسود */
         z-index: 1;
     }
 
@@ -157,7 +156,7 @@ header {
             color: white;
         }
 
-        button {
+        a {
             padding: 10px 5rem;
             background-color: var(--primary);
             color: white;
@@ -165,6 +164,7 @@ header {
             border-radius: 10px;
             font-weight: bold;
             font-size: 13px;
+            text-decoration: none;
         }
     }
 }
@@ -235,6 +235,12 @@ header {
         justify-content: center;
     }
 
+    @media (max-width: 747px) {
+        .containers {
+            height: 290px;
+        }
+    }
+
     .card {
         width: 80px;
         border-radius: 15px;
@@ -249,6 +255,7 @@ header {
         transition: .6s cubic-bezier(.28, -0.03, 0, .99);
         box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
         text-align: center;
+
 
         img {
             transform: matrix();
@@ -435,7 +442,7 @@ header {
     /* استجابة للشاشات الصغيرة */
     @media (max-width: 768px) {
         .slide-Shadow {
-            width: 35%;
+            width: 80%;
             max-width: 100%;
         }
     }
@@ -451,7 +458,7 @@ header {
         display: flex;
         align-items: center;
         overflow: hidden;
-        padding: 60px 0;
+        padding: 30px 0;
         background: white;
         position: relative;
         white-space: nowrap;
@@ -487,7 +494,7 @@ header {
     }
 
     .logos-slide img {
-        height: 50px;
+        height: 35px;
         margin: 0 40px;
     }
 
@@ -579,7 +586,8 @@ header {
 @media (max-width: 991px) {
     .form {
         background-image: url('../images/pic.svg');
-        .container{
+
+        .container {
             background-color: rgba(255, 255, 255, 0.075);
             backdrop-filter: blur(3px);
             padding-top: 10px;
