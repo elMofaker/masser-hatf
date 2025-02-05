@@ -120,3 +120,29 @@ document.querySelectorAll(".lang-option").forEach(item => {
         });
     });
 });
+
+
+// form
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // منع إرسال الفورم بشكل تقليدي
+
+    // الحصول على البيانات من الحقول
+    let name = document.getElementById('name').value;
+    let phone = document.getElementById('phone').value;
+    let company = document.getElementById('company').value;
+    let position = document.getElementById('position').value;
+    let city = document.getElementById('city').value;
+    let message = document.getElementById('message').value;
+
+    // صياغة نص الرسالة
+    let textMessage = `اسم العميل: ${name}%0Aرقم الجوال: ${phone}%0Aاسم المنشأة: ${company}%0Aالصفة في المنشأة: ${position}%0Aالمدينة: ${city}%0Aالمطلوب: ${message}`;
+
+    // رقم الواتساب
+    let whatsappNumber = "+201021170207";
+
+    // إنشاء رابط الواتساب
+    let whatsappLink = `https://wa.me/${whatsappNumber}?text=${textMessage}`;
+
+    // إعادة توجيه المستخدم إلى رابط الواتساب
+    window.location.href = whatsappLink;
+});
