@@ -29,11 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
             },
 
             768: {
-                slidesPerView: 2.2,
+                slidesPerView: 3.2,
+            },
+            420:{
+                slidesPerView: 1.7,
             },
 
             0: {
-                slidesPerView: 1.2,
+                slidesPerView: 0.5,
             },
         }
     });

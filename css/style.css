@@ -234,14 +234,17 @@ header {
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
         padding: 15px 0;
-        overflow: hidden;
     }
 
     .swiper {
-        width: 100%;
+        margin: 1px 0 0 -41px;
+        width: 130%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     .swiper-slide {
+        margin: 0 0 0 20px;
         min-width: 250px;
         border-radius: 15px;
         overflow: hidden;
@@ -277,28 +280,22 @@ header {
         border-radius: 10px;
     }
 
-    /* أزرار التحكم بالـ Slider */
     .custom-nav {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         margin-top: 10px;
     }
 
     .custom-nav button {
-        background: #333;
-        color: white;
+        color: black;
         border: none;
         padding: 10px 15px;
-        margin: 0 5px;
-        border-radius: 5px;
         cursor: pointer;
+        background: transparent;
+        font-weight: 900;
+        font-size: 25px;
     }
 
-    .custom-nav button:hover {
-        background: #555;
-    }
-
-    /* إخفاء الأزرار الافتراضية لـ Swiper */
     .swiper-button-next,
     .swiper-button-prev {
         display: none !important;
@@ -307,7 +304,7 @@ header {
     /* استجابة للشاشات الصغيرة */
     @media (max-width: 768px) {
         .slide-Shadow {
-            width: 90%;
+            width: 50%;
             max-width: 100%;
         }
     }
@@ -318,6 +315,7 @@ header {
 
 /* start infinite-bar*/
 .infinite-bar {
+
     .logos {
         display: flex;
         align-items: center;
