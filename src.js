@@ -13,7 +13,7 @@ window.onscroll = function () {
 // swiper
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".swiper", {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 2,
         loop: true,
         pagination: {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         breakpoints: {
             0: {
-                slidesPerView: 4,
+                slidesPerView: 3,
             },
         },
     });
