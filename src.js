@@ -10,6 +10,31 @@ window.onscroll = function () {
     };
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    // اغلاق النافبار عند الضغط على أي رابط
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            if (window.innerWidth <= 991) {
+                navbarCollapse.classList.remove("show");
+                navbarToggler.classList.add("collapsed");
+            }
+        });
+    });
+
+    // اغلاق النافبار عند الضغط خارجها
+    document.addEventListener("click", (event) => {
+        if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+            navbarCollapse.classList.remove("show");
+            navbarToggler.classList.add("collapsed");
+        }
+    });
+});
+
+
 // swiper
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".swiper", {
@@ -35,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         swiper.slideNext();
     });
 });
+
 
 
 // prodact
@@ -126,8 +152,6 @@ document.querySelectorAll(".lang-option").forEach(item => {
         langText.innerText = selectedLang;
     });
 });
-
-
 
 // form
 document.querySelectorAll(".lang-option").forEach(item => {
