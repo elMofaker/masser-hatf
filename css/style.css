@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 
-/* start nav */
+ /*start nav */
 header {
     width: 100%;
     display: flex;
@@ -128,6 +128,10 @@ header {
         background: rgba(0, 0, 0, 0.5);
         z-index: 1;
     }
+    
+    .carousel-indicators{
+        z-index: 30;
+    }
 
     .carousel-caption {
         position: absolute;
@@ -221,6 +225,10 @@ header {
     p {
         color: gray;
     }
+    
+    img {
+          object-fit: cover;
+    }
 }
 
 /* end product */
@@ -228,7 +236,6 @@ header {
 /* start card-pounter */
 
 .card-pounter {
-
     .containers {
         height: 400px;
         display: flex;
@@ -317,6 +324,7 @@ header {
     position: relative;
     width: 100%;
     padding: 40px 0;
+
 
 
     .controls-container {
@@ -428,6 +436,10 @@ header {
             max-width: 100%;
         }
     }
+    
+    img{
+            object-fit: cover;
+    }
 
 }
 
@@ -446,25 +458,25 @@ header {
         white-space: nowrap;
     }
 
-    .logos::before,
-    .logos::after {
-        position: absolute;
-        top: 0;
-        width: 250px;
-        height: 100%;
-        content: "";
-        z-index: 2;
-    }
+    /*.logos::before,*/
+    /*.logos::after {*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    width: 20px;*/
+    /*    height: 100%;*/
+    /*    content: "";*/
+    /*    z-index: 2;*/
+    /*}*/
 
-    .logos::before {
-        left: 0;
-        background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-    }
+    /*.logos::before {*/
+    /*    left: 0;*/
+    /*    background: linear-gradient(to right, rgb(255 255 255 / 0%), #ffffff3d);*/
+    /*}*/
 
-    .logos::after {
-        right: 0;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-    }
+    /*.logos::after {*/
+    /*    right: 0;*/
+    /*    background: linear-gradient(to right, rgb(255 255 255 / 0%), #ffffff3d);*/
+    /*}*/
 
     .logos:hover .logos-slide {
         animation-play-state: paused;
@@ -476,7 +488,7 @@ header {
     }
 
     .logos-slide img {
-        height: 35px;
+        height: 45px;
         margin: 0 40px;
     }
 
@@ -591,6 +603,7 @@ header {
     }
 }
 
+
 /* end form */
 
 footer {
@@ -671,3 +684,27 @@ footer {
 }
 
 /* end slider */
+
+/* Fixed whatsapp-icon */
+
+.whatsapp-icon {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    outline: none;  
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.whatsapp-icon i {
+    font-size: 22px;
+}
